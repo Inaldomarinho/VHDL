@@ -1,0 +1,693 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock'
+Slack : -5.833
+TNS   : -194.486
+
+Type  : Slow Model Setup 'relogio:RELOGIO1|contador0a9:SEG0A9|tc'
+Slack : -2.324
+TNS   : -2.871
+
+Type  : Slow Model Setup 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_1|tc'
+Slack : -2.034
+TNS   : -2.553
+
+Type  : Slow Model Setup 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_3|tc'
+Slack : -2.009
+TNS   : -2.082
+
+Type  : Slow Model Setup 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_2|tc'
+Slack : -1.887
+TNS   : -2.237
+
+Type  : Slow Model Setup 'relogio:RELOGIO1|contador0a9:MIN0A9|tc'
+Slack : -1.872
+TNS   : -1.955
+
+Type  : Slow Model Setup 'cronometro:CRONOMETRO1|DivisorFreq3:DIV0|estado'
+Slack : -1.689
+TNS   : -8.258
+
+Type  : Slow Model Setup 'cronometro:CRONOMETRO1|contador0a5:CONT0A5_1|tc'
+Slack : -1.516
+TNS   : -1.745
+
+Type  : Slow Model Setup 'mode'
+Slack : -1.362
+TNS   : -1.469
+
+Type  : Slow Model Setup 'DivisorFreq2:DIVFREQ|estado'
+Slack : -1.062
+TNS   : -1.062
+
+Type  : Slow Model Setup 'start'
+Slack : -1.007
+TNS   : -4.461
+
+Type  : Slow Model Setup 'set'
+Slack : -0.784
+TNS   : -2.790
+
+Type  : Slow Model Setup 'reset'
+Slack : -0.582
+TNS   : -0.582
+
+Type  : Slow Model Setup 'relogio:RELOGIO1|DivisorFreq:DIV0|estado'
+Slack : -0.454
+TNS   : -0.650
+
+Type  : Slow Model Setup 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_4|tc'
+Slack : -0.064
+TNS   : -0.092
+
+Type  : Slow Model Setup 'alarme:ALARME1|contador0a9:MIN0A9|tc'
+Slack : -0.045
+TNS   : -0.059
+
+Type  : Slow Model Setup 'relogio:RELOGIO1|contador0a9:HR0A9|tc'
+Slack : 0.041
+TNS   : 0.000
+
+Type  : Slow Model Setup 'alarme:ALARME1|contador0a9:HR0A9|tc'
+Slack : 0.225
+TNS   : 0.000
+
+Type  : Slow Model Setup 'config'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Setup 'decodificador:DECODIF|DivisorFreq2:DivFreq|estado'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Hold 'start'
+Slack : -6.312
+TNS   : -18.628
+
+Type  : Slow Model Hold 'cronometro:CRONOMETRO1|DivisorFreq3:DIV0|estado'
+Slack : -2.937
+TNS   : -2.937
+
+Type  : Slow Model Hold 'clock'
+Slack : -2.534
+TNS   : -10.211
+
+Type  : Slow Model Hold 'DivisorFreq2:DIVFREQ|estado'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'alarme:ALARME1|contador0a9:HR0A9|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'alarme:ALARME1|contador0a9:MIN0A9|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'config'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'cronometro:CRONOMETRO1|contador0a5:CONT0A5_1|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_1|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_2|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_3|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_4|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'decodificador:DECODIF|DivisorFreq2:DivFreq|estado'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'mode'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'relogio:RELOGIO1|DivisorFreq:DIV0|estado'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'relogio:RELOGIO1|contador0a9:HR0A9|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'relogio:RELOGIO1|contador0a9:MIN0A9|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'relogio:RELOGIO1|contador0a9:SEG0A9|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'reset'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'set'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'relogio:RELOGIO1|contador0a9:HR0A9|tc'
+Slack : -7.496
+TNS   : -14.992
+
+Type  : Slow Model Recovery 'alarme:ALARME1|contador0a9:HR0A9|tc'
+Slack : -4.641
+TNS   : -9.282
+
+Type  : Slow Model Recovery 'alarme:ALARME1|contador0a9:MIN0A9|tc'
+Slack : -3.148
+TNS   : -9.444
+
+Type  : Slow Model Recovery 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_4|tc'
+Slack : -2.155
+TNS   : -6.465
+
+Type  : Slow Model Recovery 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_1|tc'
+Slack : -2.130
+TNS   : -8.520
+
+Type  : Slow Model Recovery 'cronometro:CRONOMETRO1|DivisorFreq3:DIV0|estado'
+Slack : -2.112
+TNS   : -8.448
+
+Type  : Slow Model Recovery 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_3|tc'
+Slack : -2.105
+TNS   : -6.315
+
+Type  : Slow Model Recovery 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_2|tc'
+Slack : -1.980
+TNS   : -7.920
+
+Type  : Slow Model Recovery 'cronometro:CRONOMETRO1|contador0a5:CONT0A5_1|tc'
+Slack : -1.826
+TNS   : -7.304
+
+Type  : Slow Model Recovery 'start'
+Slack : -1.510
+TNS   : -12.909
+
+Type  : Slow Model Recovery 'config'
+Slack : -1.481
+TNS   : -2.095
+
+Type  : Slow Model Recovery 'decodificador:DECODIF|DivisorFreq2:DivFreq|estado'
+Slack : -1.171
+TNS   : -2.333
+
+Type  : Slow Model Recovery 'set'
+Slack : -0.439
+TNS   : -0.708
+
+Type  : Slow Model Removal 'start'
+Slack : -3.528
+TNS   : -21.700
+
+Type  : Slow Model Removal 'config'
+Slack : -0.022
+TNS   : -0.022
+
+Type  : Slow Model Removal 'set'
+Slack : 1.039
+TNS   : 0.000
+
+Type  : Slow Model Removal 'cronometro:CRONOMETRO1|contador0a5:CONT0A5_1|tc'
+Slack : 1.179
+TNS   : 0.000
+
+Type  : Slow Model Removal 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_2|tc'
+Slack : 1.333
+TNS   : 0.000
+
+Type  : Slow Model Removal 'alarme:ALARME1|contador0a9:HR0A9|tc'
+Slack : 1.428
+TNS   : 0.000
+
+Type  : Slow Model Removal 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_3|tc'
+Slack : 1.458
+TNS   : 0.000
+
+Type  : Slow Model Removal 'cronometro:CRONOMETRO1|DivisorFreq3:DIV0|estado'
+Slack : 1.465
+TNS   : 0.000
+
+Type  : Slow Model Removal 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_1|tc'
+Slack : 1.483
+TNS   : 0.000
+
+Type  : Slow Model Removal 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_4|tc'
+Slack : 1.508
+TNS   : 0.000
+
+Type  : Slow Model Removal 'relogio:RELOGIO1|contador0a9:HR0A9|tc'
+Slack : 1.590
+TNS   : 0.000
+
+Type  : Slow Model Removal 'decodificador:DECODIF|DivisorFreq2:DivFreq|estado'
+Slack : 1.932
+TNS   : 0.000
+
+Type  : Slow Model Removal 'alarme:ALARME1|contador0a9:MIN0A9|tc'
+Slack : 2.562
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -88.380
+
+Type  : Slow Model Minimum Pulse Width 'config'
+Slack : -1.380
+TNS   : -3.380
+
+Type  : Slow Model Minimum Pulse Width 'start'
+Slack : -1.222
+TNS   : -22.222
+
+Type  : Slow Model Minimum Pulse Width 'set'
+Slack : -1.222
+TNS   : -5.222
+
+Type  : Slow Model Minimum Pulse Width 'mode'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Slow Model Minimum Pulse Width 'reset'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Slow Model Minimum Pulse Width 'cronometro:CRONOMETRO1|DivisorFreq3:DIV0|estado'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'cronometro:CRONOMETRO1|contador0a5:CONT0A5_1|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_1|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_2|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'relogio:RELOGIO1|DivisorFreq:DIV0|estado'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_3|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'relogio:RELOGIO1|contador0a9:MIN0A9|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'relogio:RELOGIO1|contador0a9:SEG0A9|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'alarme:ALARME1|contador0a9:MIN0A9|tc'
+Slack : -0.500
+TNS   : -3.000
+
+Type  : Slow Model Minimum Pulse Width 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_4|tc'
+Slack : -0.500
+TNS   : -3.000
+
+Type  : Slow Model Minimum Pulse Width 'alarme:ALARME1|contador0a9:HR0A9|tc'
+Slack : -0.500
+TNS   : -2.000
+
+Type  : Slow Model Minimum Pulse Width 'decodificador:DECODIF|DivisorFreq2:DivFreq|estado'
+Slack : -0.500
+TNS   : -2.000
+
+Type  : Slow Model Minimum Pulse Width 'relogio:RELOGIO1|contador0a9:HR0A9|tc'
+Slack : -0.500
+TNS   : -2.000
+
+Type  : Slow Model Minimum Pulse Width 'DivisorFreq2:DIVFREQ|estado'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Setup 'clock'
+Slack : -2.257
+TNS   : -47.183
+
+Type  : Fast Model Setup 'relogio:RELOGIO1|contador0a9:SEG0A9|tc'
+Slack : -0.847
+TNS   : -0.847
+
+Type  : Fast Model Setup 'relogio:RELOGIO1|contador0a9:MIN0A9|tc'
+Slack : -0.672
+TNS   : -0.672
+
+Type  : Fast Model Setup 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_1|tc'
+Slack : -0.605
+TNS   : -0.605
+
+Type  : Fast Model Setup 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_3|tc'
+Slack : -0.583
+TNS   : -0.583
+
+Type  : Fast Model Setup 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_2|tc'
+Slack : -0.557
+TNS   : -0.557
+
+Type  : Fast Model Setup 'cronometro:CRONOMETRO1|DivisorFreq3:DIV0|estado'
+Slack : -0.517
+TNS   : -2.315
+
+Type  : Fast Model Setup 'DivisorFreq2:DIVFREQ|estado'
+Slack : -0.509
+TNS   : -0.509
+
+Type  : Fast Model Setup 'mode'
+Slack : -0.342
+TNS   : -0.342
+
+Type  : Fast Model Setup 'cronometro:CRONOMETRO1|contador0a5:CONT0A5_1|tc'
+Slack : -0.341
+TNS   : -0.341
+
+Type  : Fast Model Setup 'set'
+Slack : -0.077
+TNS   : -0.188
+
+Type  : Fast Model Setup 'reset'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Fast Model Setup 'start'
+Slack : 0.106
+TNS   : 0.000
+
+Type  : Fast Model Setup 'relogio:RELOGIO1|DivisorFreq:DIV0|estado'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Fast Model Setup 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_4|tc'
+Slack : 0.501
+TNS   : 0.000
+
+Type  : Fast Model Setup 'alarme:ALARME1|contador0a9:MIN0A9|tc'
+Slack : 0.513
+TNS   : 0.000
+
+Type  : Fast Model Setup 'relogio:RELOGIO1|contador0a9:HR0A9|tc'
+Slack : 0.549
+TNS   : 0.000
+
+Type  : Fast Model Setup 'alarme:ALARME1|contador0a9:HR0A9|tc'
+Slack : 0.629
+TNS   : 0.000
+
+Type  : Fast Model Setup 'config'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Setup 'decodificador:DECODIF|DivisorFreq2:DivFreq|estado'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Hold 'start'
+Slack : -3.448
+TNS   : -10.219
+
+Type  : Fast Model Hold 'cronometro:CRONOMETRO1|DivisorFreq3:DIV0|estado'
+Slack : -1.683
+TNS   : -1.683
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.576
+TNS   : -6.397
+
+Type  : Fast Model Hold 'DivisorFreq2:DIVFREQ|estado'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'alarme:ALARME1|contador0a9:HR0A9|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'alarme:ALARME1|contador0a9:MIN0A9|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'config'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'cronometro:CRONOMETRO1|contador0a5:CONT0A5_1|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_1|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_2|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_3|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_4|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'decodificador:DECODIF|DivisorFreq2:DivFreq|estado'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'mode'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'relogio:RELOGIO1|DivisorFreq:DIV0|estado'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'relogio:RELOGIO1|contador0a9:HR0A9|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'relogio:RELOGIO1|contador0a9:MIN0A9|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'relogio:RELOGIO1|contador0a9:SEG0A9|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'reset'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'set'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'relogio:RELOGIO1|contador0a9:HR0A9|tc'
+Slack : -3.740
+TNS   : -7.480
+
+Type  : Fast Model Recovery 'alarme:ALARME1|contador0a9:HR0A9|tc'
+Slack : -2.101
+TNS   : -4.202
+
+Type  : Fast Model Recovery 'alarme:ALARME1|contador0a9:MIN0A9|tc'
+Slack : -1.116
+TNS   : -3.348
+
+Type  : Fast Model Recovery 'cronometro:CRONOMETRO1|DivisorFreq3:DIV0|estado'
+Slack : -0.723
+TNS   : -2.892
+
+Type  : Fast Model Recovery 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_4|tc'
+Slack : -0.679
+TNS   : -2.037
+
+Type  : Fast Model Recovery 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_1|tc'
+Slack : -0.677
+TNS   : -2.708
+
+Type  : Fast Model Recovery 'decodificador:DECODIF|DivisorFreq2:DivFreq|estado'
+Slack : -0.665
+TNS   : -1.328
+
+Type  : Fast Model Recovery 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_3|tc'
+Slack : -0.655
+TNS   : -1.965
+
+Type  : Fast Model Recovery 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_2|tc'
+Slack : -0.627
+TNS   : -2.508
+
+Type  : Fast Model Recovery 'config'
+Slack : -0.552
+TNS   : -0.721
+
+Type  : Fast Model Recovery 'cronometro:CRONOMETRO1|contador0a5:CONT0A5_1|tc'
+Slack : -0.513
+TNS   : -2.052
+
+Type  : Fast Model Recovery 'start'
+Slack : -0.233
+TNS   : -1.708
+
+Type  : Fast Model Recovery 'set'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast Model Removal 'start'
+Slack : -1.708
+TNS   : -12.724
+
+Type  : Fast Model Removal 'config'
+Slack : 0.006
+TNS   : 0.000
+
+Type  : Fast Model Removal 'cronometro:CRONOMETRO1|contador0a5:CONT0A5_1|tc'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Fast Model Removal 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_2|tc'
+Slack : 0.511
+TNS   : 0.000
+
+Type  : Fast Model Removal 'alarme:ALARME1|contador0a9:HR0A9|tc'
+Slack : 0.513
+TNS   : 0.000
+
+Type  : Fast Model Removal 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_3|tc'
+Slack : 0.539
+TNS   : 0.000
+
+Type  : Fast Model Removal 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_1|tc'
+Slack : 0.561
+TNS   : 0.000
+
+Type  : Fast Model Removal 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_4|tc'
+Slack : 0.563
+TNS   : 0.000
+
+Type  : Fast Model Removal 'set'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Fast Model Removal 'cronometro:CRONOMETRO1|DivisorFreq3:DIV0|estado'
+Slack : 0.607
+TNS   : 0.000
+
+Type  : Fast Model Removal 'relogio:RELOGIO1|contador0a9:HR0A9|tc'
+Slack : 0.838
+TNS   : 0.000
+
+Type  : Fast Model Removal 'alarme:ALARME1|contador0a9:MIN0A9|tc'
+Slack : 1.045
+TNS   : 0.000
+
+Type  : Fast Model Removal 'decodificador:DECODIF|DivisorFreq2:DivFreq|estado'
+Slack : 1.543
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -88.380
+
+Type  : Fast Model Minimum Pulse Width 'config'
+Slack : -1.380
+TNS   : -3.380
+
+Type  : Fast Model Minimum Pulse Width 'start'
+Slack : -1.222
+TNS   : -22.222
+
+Type  : Fast Model Minimum Pulse Width 'set'
+Slack : -1.222
+TNS   : -5.222
+
+Type  : Fast Model Minimum Pulse Width 'mode'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Minimum Pulse Width 'reset'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Fast Model Minimum Pulse Width 'cronometro:CRONOMETRO1|DivisorFreq3:DIV0|estado'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'cronometro:CRONOMETRO1|contador0a5:CONT0A5_1|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_1|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_2|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'relogio:RELOGIO1|DivisorFreq:DIV0|estado'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_3|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'relogio:RELOGIO1|contador0a9:MIN0A9|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'relogio:RELOGIO1|contador0a9:SEG0A9|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'alarme:ALARME1|contador0a9:MIN0A9|tc'
+Slack : -0.500
+TNS   : -3.000
+
+Type  : Fast Model Minimum Pulse Width 'cronometro:CRONOMETRO1|contador0a9:CONT0A9_4|tc'
+Slack : -0.500
+TNS   : -3.000
+
+Type  : Fast Model Minimum Pulse Width 'alarme:ALARME1|contador0a9:HR0A9|tc'
+Slack : -0.500
+TNS   : -2.000
+
+Type  : Fast Model Minimum Pulse Width 'decodificador:DECODIF|DivisorFreq2:DivFreq|estado'
+Slack : -0.500
+TNS   : -2.000
+
+Type  : Fast Model Minimum Pulse Width 'relogio:RELOGIO1|contador0a9:HR0A9|tc'
+Slack : -0.500
+TNS   : -2.000
+
+Type  : Fast Model Minimum Pulse Width 'DivisorFreq2:DIVFREQ|estado'
+Slack : -0.500
+TNS   : -1.000
+
+------------------------------------------------------------

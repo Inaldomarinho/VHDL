@@ -1,0 +1,17 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity cronometro is
+   port( start, clock: in  std_logic;
+         : out std_logic);
+end cronometro;
+
+architecture cronometro of cronometro is
+   signal : std_logic;
+begin
+   process (Clock, Reset) 
+   begin		
+         
+   end process;
+   
+end cronometro;

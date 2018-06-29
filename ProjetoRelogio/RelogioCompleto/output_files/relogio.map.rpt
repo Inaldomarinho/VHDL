@@ -1,0 +1,650 @@
+Analysis & Synthesis report for relogio
+Sun Jun 10 22:30:17 2018
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "decodificador:DECODIF|JK:JK2"
+ 13. Port Connectivity Checks: "decodificador:DECODIF|JK:JK1"
+ 14. Port Connectivity Checks: "JK:FFJKALARME"
+ 15. Port Connectivity Checks: "cronometro:CRONOMETRO1|contador0a5:CONT0A5_2"
+ 16. Port Connectivity Checks: "cronometro:CRONOMETRO1|contador0a9:CONT0A9_4"
+ 17. Port Connectivity Checks: "cronometro:CRONOMETRO1|contador0a5:CONT0A5_1"
+ 18. Port Connectivity Checks: "cronometro:CRONOMETRO1|contador0a9:CONT0A9_3"
+ 19. Port Connectivity Checks: "cronometro:CRONOMETRO1|contador0a9:CONT0A9_2"
+ 20. Port Connectivity Checks: "cronometro:CRONOMETRO1|JK:FFJK"
+ 21. Port Connectivity Checks: "alarme:ALARME1|Contador0a2:HR0A2"
+ 22. Port Connectivity Checks: "alarme:ALARME1|contador0a9:HR0A9"
+ 23. Port Connectivity Checks: "alarme:ALARME1|contador0a5:MIN0A5"
+ 24. Port Connectivity Checks: "alarme:ALARME1|contador0a9:MIN0A9"
+ 25. Port Connectivity Checks: "alarme:ALARME1|LogicaAlarme:LOGICADOALARME|JK:FFJK"
+ 26. Port Connectivity Checks: "relogio:RELOGIO1|Contador0a2:HR0A2"
+ 27. Port Connectivity Checks: "relogio:RELOGIO1|contador0a9:HR0A9"
+ 28. Port Connectivity Checks: "relogio:RELOGIO1|contador0a5:MIN0A5"
+ 29. Port Connectivity Checks: "relogio:RELOGIO1|contador0a9:MIN0A9"
+ 30. Port Connectivity Checks: "relogio:RELOGIO1|contador0a5:SEG0A5"
+ 31. Port Connectivity Checks: "relogio:RELOGIO1|contador0a9:SEG0A9"
+ 32. Port Connectivity Checks: "relogio:RELOGIO1|LogicaConfig:LOGICADOCONFIG|JK:FFJK"
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Jun 10 22:30:17 2018      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; relogio                                    ;
+; Top-level Entity Name              ; ProjetoRelogio                             ;
+; Family                             ; Cyclone II                                 ;
+; Total logic elements               ; 315                                        ;
+;     Total combinational functions  ; 315                                        ;
+;     Dedicated logic registers      ; 167                                        ;
+; Total registers                    ; 167                                        ;
+; Total pins                         ; 52                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; ProjetoRelogio     ; relogio            ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+; relogio.vhd                      ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/relogio.vhd        ;         ;
+; Alarme.vhd                       ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/Alarme.vhd         ;         ;
+; LogicaAlarme.vhd                 ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/LogicaAlarme.vhd   ;         ;
+; cronometro.vhd                   ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/cronometro.vhd     ;         ;
+; decodificador.vhd                ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/decodificador.vhd  ;         ;
+; LogicaConfig.vhd                 ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/LogicaConfig.vhd   ;         ;
+; JK.vhd                           ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/JK.vhd             ;         ;
+; DivisorFreq.vhd                  ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/DivisorFreq.vhd    ;         ;
+; Contador0a9.vhd                  ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/Contador0a9.vhd    ;         ;
+; Contador0a5.vhd                  ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/Contador0a5.vhd    ;         ;
+; Contador0a2.vhd                  ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/Contador0a2.vhd    ;         ;
+; ProjetoRelogio.vhd               ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/ProjetoRelogio.vhd ;         ;
+; DivisorFreq2.vhd                 ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/DivisorFreq2.vhd   ;         ;
+; DivisorFreq3.vhd                 ; yes             ; User VHDL File  ; C:/Users/inald/Desktop/ProjetodeCD/ProjetoRelogio-master/RelogioCompleto/DivisorFreq3.vhd   ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 315   ;
+;                                             ;       ;
+; Total combinational functions               ; 315   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 124   ;
+;     -- 3 input functions                    ; 52    ;
+;     -- <=2 input functions                  ; 139   ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 253   ;
+;     -- arithmetic mode                      ; 62    ;
+;                                             ;       ;
+; Total registers                             ; 167   ;
+;     -- Dedicated logic registers            ; 167   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 52    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 87    ;
+; Total fan-out                               ; 1395  ;
+; Average fan-out                             ; 2.61  ;
++---------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                   ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Library Name ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+
+; |ProjetoRelogio                     ; 315 (46)          ; 167 (27)     ; 0           ; 0            ; 0       ; 0         ; 52   ; 0            ; |ProjetoRelogio                                                      ;              ;
+;    |DivisorFreq2:DIVFREQ|           ; 36 (36)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|DivisorFreq2:DIVFREQ                                 ;              ;
+;    |JK:FFJKALARME|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|JK:FFJKALARME                                        ;              ;
+;    |alarme:ALARME1|                 ; 27 (7)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|alarme:ALARME1                                       ;              ;
+;       |Contador0a2:HR0A2|           ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|alarme:ALARME1|Contador0a2:HR0A2                     ;              ;
+;       |LogicaAlarme:LOGICADOALARME| ; 3 (2)             ; 4 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|alarme:ALARME1|LogicaAlarme:LOGICADOALARME           ;              ;
+;          |JK:FFJK|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|alarme:ALARME1|LogicaAlarme:LOGICADOALARME|JK:FFJK   ;              ;
+;       |contador0a5:MIN0A5|          ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|alarme:ALARME1|contador0a5:MIN0A5                    ;              ;
+;       |contador0a9:HR0A9|           ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|alarme:ALARME1|contador0a9:HR0A9                     ;              ;
+;       |contador0a9:MIN0A9|          ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|alarme:ALARME1|contador0a9:MIN0A9                    ;              ;
+;    |cronometro:CRONOMETRO1|         ; 58 (0)            ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|cronometro:CRONOMETRO1                               ;              ;
+;       |DivisorFreq3:DIV0|           ; 29 (29)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|cronometro:CRONOMETRO1|DivisorFreq3:DIV0             ;              ;
+;       |JK:FFJK|                     ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|cronometro:CRONOMETRO1|JK:FFJK                       ;              ;
+;       |contador0a5:CONT0A5_1|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|cronometro:CRONOMETRO1|contador0a5:CONT0A5_1         ;              ;
+;       |contador0a5:CONT0A5_2|       ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|cronometro:CRONOMETRO1|contador0a5:CONT0A5_2         ;              ;
+;       |contador0a9:CONT0A9_1|       ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|cronometro:CRONOMETRO1|contador0a9:CONT0A9_1         ;              ;
+;       |contador0a9:CONT0A9_2|       ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|cronometro:CRONOMETRO1|contador0a9:CONT0A9_2         ;              ;
+;       |contador0a9:CONT0A9_3|       ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|cronometro:CRONOMETRO1|contador0a9:CONT0A9_3         ;              ;
+;       |contador0a9:CONT0A9_4|       ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|cronometro:CRONOMETRO1|contador0a9:CONT0A9_4         ;              ;
+;    |decodificador:DECODIF|          ; 67 (56)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|decodificador:DECODIF                                ;              ;
+;       |DivisorFreq2:DivFreq|        ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|decodificador:DECODIF|DivisorFreq2:DivFreq           ;              ;
+;       |JK:JK1|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|decodificador:DECODIF|JK:JK1                         ;              ;
+;       |JK:JK2|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|decodificador:DECODIF|JK:JK2                         ;              ;
+;    |relogio:RELOGIO1|               ; 80 (7)            ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|relogio:RELOGIO1                                     ;              ;
+;       |Contador0a2:HR0A2|           ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|relogio:RELOGIO1|Contador0a2:HR0A2                   ;              ;
+;       |DivisorFreq:DIV0|            ; 44 (44)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|relogio:RELOGIO1|DivisorFreq:DIV0                    ;              ;
+;       |LogicaConfig:LOGICADOCONFIG| ; 3 (2)             ; 3 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|relogio:RELOGIO1|LogicaConfig:LOGICADOCONFIG         ;              ;
+;          |JK:FFJK|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|relogio:RELOGIO1|LogicaConfig:LOGICADOCONFIG|JK:FFJK ;              ;
+;       |contador0a5:MIN0A5|          ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|relogio:RELOGIO1|contador0a5:MIN0A5                  ;              ;
+;       |contador0a5:SEG0A5|          ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|relogio:RELOGIO1|contador0a5:SEG0A5                  ;              ;
+;       |contador0a9:HR0A9|           ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|relogio:RELOGIO1|contador0a9:HR0A9                   ;              ;
+;       |contador0a9:MIN0A9|          ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|relogio:RELOGIO1|contador0a9:MIN0A9                  ;              ;
+;       |contador0a9:SEG0A9|          ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoRelogio|relogio:RELOGIO1|contador0a9:SEG0A9                  ;              ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                         ;
++---------------------------------------------------------+------------------------------------------------------------------+
+; Register name                                           ; Reason for Removal                                               ;
++---------------------------------------------------------+------------------------------------------------------------------+
+; Minutos2Sig[3]                                          ; Merged with Horas2Sig[3]                                         ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[9]  ; Merged with DivisorFreq2:DIVFREQ|contagem[9]                     ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[8]  ; Merged with DivisorFreq2:DIVFREQ|contagem[8]                     ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[7]  ; Merged with DivisorFreq2:DIVFREQ|contagem[7]                     ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[6]  ; Merged with DivisorFreq2:DIVFREQ|contagem[6]                     ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[5]  ; Merged with DivisorFreq2:DIVFREQ|contagem[5]                     ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[4]  ; Merged with DivisorFreq2:DIVFREQ|contagem[4]                     ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[3]  ; Merged with DivisorFreq2:DIVFREQ|contagem[3]                     ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[2]  ; Merged with DivisorFreq2:DIVFREQ|contagem[2]                     ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[1]  ; Merged with DivisorFreq2:DIVFREQ|contagem[1]                     ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[0]  ; Merged with DivisorFreq2:DIVFREQ|contagem[0]                     ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[10] ; Merged with DivisorFreq2:DIVFREQ|contagem[10]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[11] ; Merged with DivisorFreq2:DIVFREQ|contagem[11]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[12] ; Merged with DivisorFreq2:DIVFREQ|contagem[12]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[13] ; Merged with DivisorFreq2:DIVFREQ|contagem[13]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[14] ; Merged with DivisorFreq2:DIVFREQ|contagem[14]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[15] ; Merged with DivisorFreq2:DIVFREQ|contagem[15]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[16] ; Merged with DivisorFreq2:DIVFREQ|contagem[16]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[17] ; Merged with DivisorFreq2:DIVFREQ|contagem[17]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[18] ; Merged with DivisorFreq2:DIVFREQ|contagem[18]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[19] ; Merged with DivisorFreq2:DIVFREQ|contagem[19]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[20] ; Merged with DivisorFreq2:DIVFREQ|contagem[20]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[21] ; Merged with DivisorFreq2:DIVFREQ|contagem[21]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[22] ; Merged with DivisorFreq2:DIVFREQ|contagem[22]                    ;
+; decodificador:DECODIF|DivisorFreq2:DivFreq|contagem[23] ; Merged with DivisorFreq2:DIVFREQ|contagem[23]                    ;
+; Horas2Sig[3]                                            ; Stuck at GND due to stuck port data_in                           ;
+; relogio:RELOGIO1|DivisorFreq:DIV0|contagem[0]           ; Merged with DivisorFreq2:DIVFREQ|contagem[0]                     ;
+; cronometro:CRONOMETRO1|DivisorFreq3:DIV0|contagem[0]    ; Merged with DivisorFreq2:DIVFREQ|contagem[0]                     ;
+; cronometro:CRONOMETRO1|DivisorFreq3:DIV0|contagem[1]    ; Merged with DivisorFreq2:DIVFREQ|contagem[1]                     ;
+; relogio:RELOGIO1|DivisorFreq:DIV0|contagem[1]           ; Merged with DivisorFreq2:DIVFREQ|contagem[1]                     ;
+; relogio:RELOGIO1|DivisorFreq:DIV0|contagem[2]           ; Merged with cronometro:CRONOMETRO1|DivisorFreq3:DIV0|contagem[2] ;
+; cronometro:CRONOMETRO1|DivisorFreq3:DIV0|contagem[2]    ; Merged with DivisorFreq2:DIVFREQ|contagem[2]                     ;
+; relogio:RELOGIO1|DivisorFreq:DIV0|contagem[3]           ; Merged with cronometro:CRONOMETRO1|DivisorFreq3:DIV0|contagem[3] ;
+; cronometro:CRONOMETRO1|DivisorFreq3:DIV0|contagem[3]    ; Merged with DivisorFreq2:DIVFREQ|contagem[3]                     ;
+; relogio:RELOGIO1|DivisorFreq:DIV0|contagem[4]           ; Merged with DivisorFreq2:DIVFREQ|contagem[4]                     ;
+; Total Number of Removed Registers = 35                  ;                                                                  ;
++---------------------------------------------------------+------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 167   ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 14    ;
+; Number of registers using Asynchronous Clear ; 48    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 33    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; DivisorFreq2:DIVFREQ|contagem[0]       ; 4       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ProjetoRelogio|Horas2Sig[2]    ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |ProjetoRelogio|Segundos2Sig[0] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |ProjetoRelogio|PiscaHR         ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |ProjetoRelogio|Horas1Sig[1]    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "decodificador:DECODIF|JK:JK2" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                   ;
+; k    ; Input ; Info     ; Stuck at VCC                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "decodificador:DECODIF|JK:JK1" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                   ;
+; k    ; Input ; Info     ; Stuck at VCC                   ;
++------+-------+----------+--------------------------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "JK:FFJKALARME" ;
++-------+-------+----------+----------------+
+; Port  ; Type  ; Severity ; Details        ;
++-------+-------+----------+----------------+
+; k     ; Input ; Info     ; Stuck at VCC   ;
+; reset ; Input ; Info     ; Stuck at GND   ;
++-------+-------+----------+----------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:CRONOMETRO1|contador0a5:CONT0A5_2"                                         ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; carry  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:CRONOMETRO1|contador0a9:CONT0A9_4" ;
++--------+-------+----------+----------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                      ;
++--------+-------+----------+----------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                 ;
++--------+-------+----------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:CRONOMETRO1|contador0a5:CONT0A5_1" ;
++--------+-------+----------+----------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                      ;
++--------+-------+----------+----------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                 ;
++--------+-------+----------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:CRONOMETRO1|contador0a9:CONT0A9_3" ;
++--------+-------+----------+----------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                      ;
++--------+-------+----------+----------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                 ;
++--------+-------+----------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:CRONOMETRO1|contador0a9:CONT0A9_2" ;
++--------+-------+----------+----------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                      ;
++--------+-------+----------+----------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                 ;
++--------+-------+----------+----------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "cronometro:CRONOMETRO1|JK:FFJK" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                     ;
+; k    ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alarme:ALARME1|Contador0a2:HR0A2"                                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; carry  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alarme:ALARME1|contador0a9:HR0A9" ;
++--------+-------+----------+----------------------------------+
+; Port   ; Type  ; Severity ; Details                          ;
++--------+-------+----------+----------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                     ;
++--------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alarme:ALARME1|contador0a5:MIN0A5"                                                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; carry  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "alarme:ALARME1|contador0a9:MIN0A9" ;
++--------+-------+----------+-----------------------------------+
+; Port   ; Type  ; Severity ; Details                           ;
++--------+-------+----------+-----------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                      ;
++--------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alarme:ALARME1|LogicaAlarme:LOGICADOALARME|JK:FFJK" ;
++------+-------+----------+------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                              ;
++------+-------+----------+------------------------------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                                         ;
+; k    ; Input ; Info     ; Stuck at VCC                                         ;
++------+-------+----------+------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "relogio:RELOGIO1|Contador0a2:HR0A2"                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; carry  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "relogio:RELOGIO1|contador0a9:HR0A9" ;
++--------+-------+----------+------------------------------------+
+; Port   ; Type  ; Severity ; Details                            ;
++--------+-------+----------+------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                       ;
++--------+-------+----------+------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "relogio:RELOGIO1|contador0a5:MIN0A5" ;
++--------+-------+----------+-------------------------------------+
+; Port   ; Type  ; Severity ; Details                             ;
++--------+-------+----------+-------------------------------------+
+; reset  ; Input ; Info     ; Stuck at GND                        ;
+; enable ; Input ; Info     ; Stuck at VCC                        ;
++--------+-------+----------+-------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "relogio:RELOGIO1|contador0a9:MIN0A9" ;
++--------+-------+----------+-------------------------------------+
+; Port   ; Type  ; Severity ; Details                             ;
++--------+-------+----------+-------------------------------------+
+; reset  ; Input ; Info     ; Stuck at GND                        ;
+; enable ; Input ; Info     ; Stuck at VCC                        ;
++--------+-------+----------+-------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "relogio:RELOGIO1|contador0a5:SEG0A5" ;
++--------+-------+----------+-------------------------------------+
+; Port   ; Type  ; Severity ; Details                             ;
++--------+-------+----------+-------------------------------------+
+; reset  ; Input ; Info     ; Stuck at GND                        ;
+; enable ; Input ; Info     ; Stuck at VCC                        ;
++--------+-------+----------+-------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "relogio:RELOGIO1|contador0a9:SEG0A9" ;
++--------+-------+----------+-------------------------------------+
+; Port   ; Type  ; Severity ; Details                             ;
++--------+-------+----------+-------------------------------------+
+; reset  ; Input ; Info     ; Stuck at GND                        ;
+; enable ; Input ; Info     ; Stuck at VCC                        ;
++--------+-------+----------+-------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "relogio:RELOGIO1|LogicaConfig:LOGICADOCONFIG|JK:FFJK" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                                           ;
+; k    ; Input ; Info     ; Stuck at VCC                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Sun Jun 10 22:30:14 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio -c relogio
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file relogio.vhd
+    Info (12022): Found design unit 1: relogio-relogio
+    Info (12023): Found entity 1: relogio
+Info (12021): Found 2 design units, including 1 entities, in source file alarme.vhd
+    Info (12022): Found design unit 1: alarme-alarme
+    Info (12023): Found entity 1: alarme
+Info (12021): Found 2 design units, including 1 entities, in source file logicaalarme.vhd
+    Info (12022): Found design unit 1: LogicaAlarme-LogicaAlarme
+    Info (12023): Found entity 1: LogicaAlarme
+Info (12021): Found 2 design units, including 1 entities, in source file cronometro.vhd
+    Info (12022): Found design unit 1: cronometro-cronometro
+    Info (12023): Found entity 1: cronometro
+Info (12021): Found 2 design units, including 1 entities, in source file decodificador.vhd
+    Info (12022): Found design unit 1: decodificador-decodificador
+    Info (12023): Found entity 1: decodificador
+Info (12021): Found 2 design units, including 1 entities, in source file logicaconfig.vhd
+    Info (12022): Found design unit 1: LogicaConfig-LogicaConfig
+    Info (12023): Found entity 1: LogicaConfig
+Info (12021): Found 2 design units, including 1 entities, in source file jk.vhd
+    Info (12022): Found design unit 1: JK-JK
+    Info (12023): Found entity 1: JK
+Info (12021): Found 2 design units, including 1 entities, in source file divisorfreq.vhd
+    Info (12022): Found design unit 1: DivisorFreq-DivisorFreq
+    Info (12023): Found entity 1: DivisorFreq
+Info (12021): Found 2 design units, including 1 entities, in source file contador0a9.vhd
+    Info (12022): Found design unit 1: contador0a9-cont
+    Info (12023): Found entity 1: contador0a9
+Info (12021): Found 2 design units, including 1 entities, in source file contador0a5.vhd
+    Info (12022): Found design unit 1: contador0a5-cont
+    Info (12023): Found entity 1: contador0a5
+Info (12021): Found 2 design units, including 1 entities, in source file contador0a2.vhd
+    Info (12022): Found design unit 1: Contador0a2-cont
+    Info (12023): Found entity 1: Contador0a2
+Info (12021): Found 2 design units, including 1 entities, in source file projetorelogio.vhd
+    Info (12022): Found design unit 1: ProjetoRelogio-ProjetoRelogio
+    Info (12023): Found entity 1: ProjetoRelogio
+Info (12021): Found 2 design units, including 1 entities, in source file divisorfreq2.vhd
+    Info (12022): Found design unit 1: DivisorFreq2-DivisorFreq2
+    Info (12023): Found entity 1: DivisorFreq2
+Info (12021): Found 2 design units, including 1 entities, in source file divisorfreq3.vhd
+    Info (12022): Found design unit 1: DivisorFreq3-DivisorFreq3
+    Info (12023): Found entity 1: DivisorFreq3
+Info (12127): Elaborating entity "ProjetoRelogio" for the top level hierarchy
+Warning (10540): VHDL Signal Declaration warning at ProjetoRelogio.vhd(104): used explicit default value for signal "Segundos1SigA" because signal was never assigned a value
+Info (12128): Elaborating entity "relogio" for hierarchy "relogio:RELOGIO1"
+Info (12128): Elaborating entity "DivisorFreq" for hierarchy "relogio:RELOGIO1|DivisorFreq:DIV0"
+Info (12128): Elaborating entity "LogicaConfig" for hierarchy "relogio:RELOGIO1|LogicaConfig:LOGICADOCONFIG"
+Warning (10492): VHDL Process Statement warning at LogicaConfig.vhd(26): signal "signalmode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "JK" for hierarchy "relogio:RELOGIO1|LogicaConfig:LOGICADOCONFIG|JK:FFJK"
+Info (12128): Elaborating entity "contador0a9" for hierarchy "relogio:RELOGIO1|contador0a9:SEG0A9"
+Warning (10492): VHDL Process Statement warning at Contador0a9.vhd(22): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "contador0a5" for hierarchy "relogio:RELOGIO1|contador0a5:SEG0A5"
+Info (12128): Elaborating entity "Contador0a2" for hierarchy "relogio:RELOGIO1|Contador0a2:HR0A2"
+Info (12128): Elaborating entity "alarme" for hierarchy "alarme:ALARME1"
+Info (12128): Elaborating entity "LogicaAlarme" for hierarchy "alarme:ALARME1|LogicaAlarme:LOGICADOALARME"
+Warning (10492): VHDL Process Statement warning at LogicaAlarme.vhd(27): signal "signalreset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LogicaAlarme.vhd(44): signal "saidajk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "cronometro" for hierarchy "cronometro:CRONOMETRO1"
+Info (12128): Elaborating entity "DivisorFreq3" for hierarchy "cronometro:CRONOMETRO1|DivisorFreq3:DIV0"
+Info (12128): Elaborating entity "DivisorFreq2" for hierarchy "DivisorFreq2:DIVFREQ"
+Info (12128): Elaborating entity "decodificador" for hierarchy "decodificador:DECODIF"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 368 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 46 output pins
+    Info (21061): Implemented 316 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4655 megabytes
+    Info: Processing ended: Sun Jun 10 22:30:17 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

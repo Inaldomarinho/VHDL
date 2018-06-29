@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock'
+Slack : -2.841
+TNS   : -45.386
+
+Type  : Slow Model Setup 'contador0a9:CONT0A9_2|tc'
+Slack : -0.266
+TNS   : -0.611
+
+Type  : Slow Model Setup 'contador0a9:CONT0A9_1|tc'
+Slack : -0.251
+TNS   : -0.629
+
+Type  : Slow Model Setup 'DivisorFreq:DIV0|estado'
+Slack : -0.249
+TNS   : -0.719
+
+Type  : Slow Model Setup 'contador0a5:CONT0A5_1|tc'
+Slack : -0.085
+TNS   : -0.327
+
+Type  : Slow Model Setup 'contador0a9:CONT0A9_4|tc'
+Slack : -0.070
+TNS   : -0.109
+
+Type  : Slow Model Setup 'contador0a9:CONT0A9_3|tc'
+Slack : -0.069
+TNS   : -0.113
+
+Type  : Slow Model Hold 'clock'
+Slack : -2.531
+TNS   : -2.531
+
+Type  : Slow Model Hold 'DivisorFreq:DIV0|estado'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'contador0a5:CONT0A5_1|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'contador0a9:CONT0A9_1|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'contador0a9:CONT0A9_2|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'contador0a9:CONT0A9_3|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'contador0a9:CONT0A9_4|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Slow Model Minimum Pulse Width 'DivisorFreq:DIV0|estado'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'contador0a5:CONT0A5_1|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'contador0a9:CONT0A9_1|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'contador0a9:CONT0A9_2|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'contador0a9:CONT0A9_3|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'contador0a9:CONT0A9_4|tc'
+Slack : -0.500
+TNS   : -3.000
+
+Type  : Fast Model Setup 'clock'
+Slack : -0.846
+TNS   : -9.141
+
+Type  : Fast Model Setup 'contador0a9:CONT0A9_2|tc'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Fast Model Setup 'contador0a9:CONT0A9_1|tc'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Fast Model Setup 'DivisorFreq:DIV0|estado'
+Slack : 0.423
+TNS   : 0.000
+
+Type  : Fast Model Setup 'contador0a5:CONT0A5_1|tc'
+Slack : 0.495
+TNS   : 0.000
+
+Type  : Fast Model Setup 'contador0a9:CONT0A9_3|tc'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'contador0a9:CONT0A9_4|tc'
+Slack : 0.507
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.575
+TNS   : -1.575
+
+Type  : Fast Model Hold 'DivisorFreq:DIV0|estado'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'contador0a5:CONT0A5_1|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'contador0a9:CONT0A9_1|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'contador0a9:CONT0A9_2|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'contador0a9:CONT0A9_3|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'contador0a9:CONT0A9_4|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Fast Model Minimum Pulse Width 'DivisorFreq:DIV0|estado'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'contador0a5:CONT0A5_1|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'contador0a9:CONT0A9_1|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'contador0a9:CONT0A9_2|tc'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'contador0a9:CONT0A9_3|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'contador0a9:CONT0A9_4|tc'
+Slack : -0.500
+TNS   : -3.000
+
+------------------------------------------------------------

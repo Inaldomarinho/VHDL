@@ -1,0 +1,120 @@
+|Alarme
+reset => Contador0a9:MIN0A9.reset
+reset => Contador0a5:MIN0A5.reset
+reset => comb.IN1
+reset => comb.IN1
+set => LogicaAlarme:LOGICADOALARME.set
+start => comb.IN1
+start => comb.IN1
+config => LogicaAlarme:LOGICADOALARME.config
+Minutos1[0] <= Contador0a9:MIN0A9.saida[0]
+Minutos1[1] <= Contador0a9:MIN0A9.saida[1]
+Minutos1[2] <= Contador0a9:MIN0A9.saida[2]
+Minutos1[3] <= Contador0a9:MIN0A9.saida[3]
+Minutos2[0] <= Contador0a5:MIN0A5.saida[0]
+Minutos2[1] <= Contador0a5:MIN0A5.saida[1]
+Minutos2[2] <= Contador0a5:MIN0A5.saida[2]
+Minutos2[3] <= Contador0a5:MIN0A5.saida[3]
+Horas1[0] <= Contador0a9:HR0A9.saida[0]
+Horas1[1] <= Contador0a9:HR0A9.saida[1]
+Horas1[2] <= Contador0a9:HR0A9.saida[2]
+Horas1[3] <= Contador0a9:HR0A9.saida[3]
+Horas2[0] <= Contador0a2:HR0A2.saida[0]
+Horas2[1] <= Contador0a2:HR0A2.saida[1]
+Horas2[2] <= Contador0a2:HR0A2.saida[2]
+Horas2[3] <= Contador0a2:HR0A2.saida[3]
+Ativado <= Ativado.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alarme|LogicaAlarme:LOGICADOALARME
+config => JK:FFJK.clock
+set => signalcont.CLK
+set => signalreset.CLK
+saidaconf <= JK:FFJK.Output
+saidaset <= signalcont.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alarme|LogicaAlarme:LOGICADOALARME|JK:FFJK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Reset => temp.ACLR
+Clock => temp.CLK
+Output <= temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alarme|contador0a9:MIN0A9
+clock => tc.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+clock => contagem[3].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => contagem[3].ACLR
+reset => tc.ENA
+enable => ~NO_FANOUT~
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= contagem[3].DB_MAX_OUTPUT_PORT_TYPE
+carry <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alarme|contador0a5:MIN0A5
+clock => tc.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => tc.ENA
+enable => ~NO_FANOUT~
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= <GND>
+carry <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alarme|contador0a9:HR0A9
+clock => tc.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+clock => contagem[3].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => contagem[3].ACLR
+reset => tc.ENA
+enable => ~NO_FANOUT~
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= contagem[3].DB_MAX_OUTPUT_PORT_TYPE
+carry <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alarme|Contador0a2:HR0A2
+clock => tc.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => tc.ENA
+enable => ~NO_FANOUT~
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= <GND>
+saida[3] <= <GND>
+carry <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+

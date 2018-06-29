@@ -1,0 +1,261 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock'
+Slack : -2.845
+TNS   : -45.108
+
+Type  : Slow Model Setup 'contador0a9:SEG0A9|tc'
+Slack : -1.816
+TNS   : -2.362
+
+Type  : Slow Model Setup 'contador0a9:MIN0A9|tc'
+Slack : -1.193
+TNS   : -1.543
+
+Type  : Slow Model Setup 'start'
+Slack : -0.863
+TNS   : -2.762
+
+Type  : Slow Model Setup 'set'
+Slack : -0.458
+TNS   : -0.740
+
+Type  : Slow Model Setup 'contador0a9:HR0A9|tc'
+Slack : -0.340
+TNS   : -0.679
+
+Type  : Slow Model Setup 'DivisorFreq:DIV0|estado'
+Slack : -0.242
+TNS   : -0.624
+
+Type  : Slow Model Setup 'config'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Hold 'start'
+Slack : -2.971
+TNS   : -2.971
+
+Type  : Slow Model Hold 'clock'
+Slack : -2.530
+TNS   : -2.530
+
+Type  : Slow Model Hold 'DivisorFreq:DIV0|estado'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'config'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'contador0a9:MIN0A9|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'contador0a9:SEG0A9|tc'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'set'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'contador0a9:HR0A9|tc'
+Slack : 1.071
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'contador0a9:HR0A9|tc'
+Slack : -3.763
+TNS   : -7.526
+
+Type  : Slow Model Recovery 'config'
+Slack : -1.573
+TNS   : -1.573
+
+Type  : Slow Model Recovery 'start'
+Slack : -1.384
+TNS   : -5.536
+
+Type  : Slow Model Recovery 'set'
+Slack : -0.267
+TNS   : -0.267
+
+Type  : Slow Model Removal 'start'
+Slack : 0.640
+TNS   : 0.000
+
+Type  : Slow Model Removal 'set'
+Slack : 1.037
+TNS   : 0.000
+
+Type  : Slow Model Removal 'contador0a9:HR0A9|tc'
+Slack : 2.019
+TNS   : 0.000
+
+Type  : Slow Model Removal 'config'
+Slack : 2.343
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Slow Model Minimum Pulse Width 'config'
+Slack : -1.380
+TNS   : -2.380
+
+Type  : Slow Model Minimum Pulse Width 'start'
+Slack : -1.222
+TNS   : -11.222
+
+Type  : Slow Model Minimum Pulse Width 'set'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Slow Model Minimum Pulse Width 'DivisorFreq:DIV0|estado'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'contador0a9:MIN0A9|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'contador0a9:SEG0A9|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'contador0a9:HR0A9|tc'
+Slack : -0.500
+TNS   : -2.000
+
+Type  : Fast Model Setup 'clock'
+Slack : -0.849
+TNS   : -8.916
+
+Type  : Fast Model Setup 'contador0a9:SEG0A9|tc'
+Slack : -0.579
+TNS   : -0.579
+
+Type  : Fast Model Setup 'contador0a9:MIN0A9|tc'
+Slack : -0.299
+TNS   : -0.299
+
+Type  : Fast Model Setup 'set'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Fast Model Setup 'start'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Fast Model Setup 'contador0a9:HR0A9|tc'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Fast Model Setup 'DivisorFreq:DIV0|estado'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Fast Model Setup 'config'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Hold 'start'
+Slack : -1.853
+TNS   : -1.853
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.572
+TNS   : -1.572
+
+Type  : Fast Model Hold 'DivisorFreq:DIV0|estado'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'config'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'contador0a9:MIN0A9|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'contador0a9:SEG0A9|tc'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'set'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'contador0a9:HR0A9|tc'
+Slack : 0.487
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'contador0a9:HR0A9|tc'
+Slack : -1.645
+TNS   : -3.290
+
+Type  : Fast Model Recovery 'config'
+Slack : -0.569
+TNS   : -0.569
+
+Type  : Fast Model Recovery 'start'
+Slack : -0.208
+TNS   : -0.832
+
+Type  : Fast Model Recovery 'set'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Fast Model Removal 'set'
+Slack : 0.587
+TNS   : 0.000
+
+Type  : Fast Model Removal 'start'
+Slack : 0.592
+TNS   : 0.000
+
+Type  : Fast Model Removal 'contador0a9:HR0A9|tc'
+Slack : 1.029
+TNS   : 0.000
+
+Type  : Fast Model Removal 'config'
+Slack : 1.449
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Fast Model Minimum Pulse Width 'config'
+Slack : -1.380
+TNS   : -2.380
+
+Type  : Fast Model Minimum Pulse Width 'start'
+Slack : -1.222
+TNS   : -11.222
+
+Type  : Fast Model Minimum Pulse Width 'set'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Minimum Pulse Width 'DivisorFreq:DIV0|estado'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'contador0a9:MIN0A9|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'contador0a9:SEG0A9|tc'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'contador0a9:HR0A9|tc'
+Slack : -0.500
+TNS   : -2.000
+
+------------------------------------------------------------

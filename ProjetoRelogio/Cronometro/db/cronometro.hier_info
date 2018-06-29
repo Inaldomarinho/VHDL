@@ -1,0 +1,190 @@
+|cronometro
+start => JK:FFJK.clock
+clock => DivisorFreq:DIV0.clock_in
+reset => JK:FFJK.reset
+reset => Contador0a9:CONT0A9_1.reset
+reset => Contador0a9:CONT0A9_2.reset
+reset => Contador0a9:CONT0A9_3.reset
+reset => Contador0a5:CONT0A5_1.reset
+reset => Contador0a9:CONT0A9_4.reset
+reset => Contador0a5:CONT0A5_2.reset
+Mili1[0] <= Contador0a9:CONT0A9_1.saida[0]
+Mili1[1] <= Contador0a9:CONT0A9_1.saida[1]
+Mili1[2] <= Contador0a9:CONT0A9_1.saida[2]
+Mili1[3] <= Contador0a9:CONT0A9_1.saida[3]
+Mili2[0] <= Contador0a9:CONT0A9_2.saida[0]
+Mili2[1] <= Contador0a9:CONT0A9_2.saida[1]
+Mili2[2] <= Contador0a9:CONT0A9_2.saida[2]
+Mili2[3] <= Contador0a9:CONT0A9_2.saida[3]
+Segundos1[0] <= Contador0a9:CONT0A9_3.saida[0]
+Segundos1[1] <= Contador0a9:CONT0A9_3.saida[1]
+Segundos1[2] <= Contador0a9:CONT0A9_3.saida[2]
+Segundos1[3] <= Contador0a9:CONT0A9_3.saida[3]
+Segundos2[0] <= Contador0a5:CONT0A5_1.saida[0]
+Segundos2[1] <= Contador0a5:CONT0A5_1.saida[1]
+Segundos2[2] <= Contador0a5:CONT0A5_1.saida[2]
+Segundos2[3] <= Contador0a5:CONT0A5_1.saida[3]
+Minutos1[0] <= Contador0a9:CONT0A9_4.saida[0]
+Minutos1[1] <= Contador0a9:CONT0A9_4.saida[1]
+Minutos1[2] <= Contador0a9:CONT0A9_4.saida[2]
+Minutos1[3] <= Contador0a9:CONT0A9_4.saida[3]
+Minutos2[0] <= Contador0a5:CONT0A5_2.saida[0]
+Minutos2[1] <= Contador0a5:CONT0A5_2.saida[1]
+Minutos2[2] <= Contador0a5:CONT0A5_2.saida[2]
+Minutos2[3] <= Contador0a5:CONT0A5_2.saida[3]
+
+
+|cronometro|DivisorFreq:DIV0
+clock_in => contagem[0].CLK
+clock_in => contagem[1].CLK
+clock_in => contagem[2].CLK
+clock_in => contagem[3].CLK
+clock_in => contagem[4].CLK
+clock_in => contagem[5].CLK
+clock_in => contagem[6].CLK
+clock_in => contagem[7].CLK
+clock_in => contagem[8].CLK
+clock_in => contagem[9].CLK
+clock_in => contagem[10].CLK
+clock_in => contagem[11].CLK
+clock_in => contagem[12].CLK
+clock_in => contagem[13].CLK
+clock_in => contagem[14].CLK
+clock_in => contagem[15].CLK
+clock_in => contagem[16].CLK
+clock_in => contagem[17].CLK
+clock_in => contagem[18].CLK
+clock_in => contagem[19].CLK
+clock_in => contagem[20].CLK
+clock_in => contagem[21].CLK
+clock_in => contagem[22].CLK
+clock_in => contagem[23].CLK
+clock_in => contagem[24].CLK
+clock_in => estado.CLK
+clock_out <= estado.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|JK:FFJK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Reset => temp.ACLR
+Clock => temp.CLK
+Output <= temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|contador0a9:CONT0A9_1
+clock => tc.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+clock => contagem[3].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => contagem[3].ACLR
+reset => tc.ENA
+enable => ~NO_FANOUT~
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= contagem[3].DB_MAX_OUTPUT_PORT_TYPE
+carry <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|contador0a9:CONT0A9_2
+clock => tc.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+clock => contagem[3].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => contagem[3].ACLR
+reset => tc.ENA
+enable => ~NO_FANOUT~
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= contagem[3].DB_MAX_OUTPUT_PORT_TYPE
+carry <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|contador0a9:CONT0A9_3
+clock => tc.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+clock => contagem[3].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => contagem[3].ACLR
+reset => tc.ENA
+enable => ~NO_FANOUT~
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= contagem[3].DB_MAX_OUTPUT_PORT_TYPE
+carry <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|contador0a5:CONT0A5_1
+clock => tc.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => tc.ENA
+enable => ~NO_FANOUT~
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= <GND>
+carry <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|contador0a9:CONT0A9_4
+clock => tc.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+clock => contagem[3].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => contagem[3].ACLR
+reset => tc.ENA
+enable => ~NO_FANOUT~
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= contagem[3].DB_MAX_OUTPUT_PORT_TYPE
+carry <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|contador0a5:CONT0A5_2
+clock => tc.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => tc.ENA
+enable => ~NO_FANOUT~
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= <GND>
+carry <= tc.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity LogicaConfig is
+	port (config : in std_logic;
+			set : in std_logic;
+			mode : in std_logic;
+			saida : out std_logic);
+end LogicaConfig;
+
+architecture LogicaConfig of LogicaConfig is
+signal signalcont : integer range 0 to 1:=0;
+signal saidajk: std_logic := '0';
+signal signalmode: std_logic := '0';
+component JK is 
+	port (j, k, reset, clock: in std_logic;
+			Output: out std_logic);
+end component;
+begin
+	process(set)
+	
+	begin
+       if(set = '1' and set'EVENT and saidajk) then
+			if(signalcont= 1)then
+			signalcont <= 0;
+			signalmode <= '1';
+			else
+			signalcont <=signalcont+1;
+			signalmode <= '0';
+			end if;
+		end if;
+	end process;
+	
+	FFJK: JK port map ('1','1', mode or signalmode, config, saidajk);
+	signalmode<= '0';
+   saida <= saidajk;
+end LogicaConfig;

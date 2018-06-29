@@ -1,0 +1,84 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity ProjetoRelogio is
+   port(clock, mode, set, start, config, reset: in  std_logic;
+       Segundos1 : out std_logic_vector (6 downto 0);
+		 Segundos2 : out std_logic_vector (6 downto 0);
+		 Minutos1 : out std_logic_vector (6 downto 0);
+		 Minutos2 : out std_logic_vector (6 downto 0);
+		 Horas1 : out std_logic_vector (6 downto 0);
+		 Horas2 : out std_logic_vector (6 downto 0));
+end ProjetoRelogio;
+
+architecture ProjetoRelogio of ProjetoRelogio is
+	signal SignalMode: std_logic_vector (1 downto 0):=0;
+	
+component cronometro is
+   port( start, clock, reset: in  std_logic;
+	    Mili1 : out std_logic_vector (3 downto 0);
+		 Mili2 : out std_logic_vector (3 downto 0);
+       Segundos1 : out std_logic_vector (3 downto 0);
+		 Segundos2 : out std_logic_vector (3 downto 0);
+		 Minutos1 : out std_logic_vector (3 downto 0);
+		 Minutos2 : out std_logic_vector (3 downto 0));
+end component;
+
+component alarme is
+   port(reset, set, start, config: in  std_logic;
+		 Minutos1 : out std_logic_vector (3 downto 0);
+		 Minutos2 : out std_logic_vector (3 downto 0);
+		 Horas1 : out std_logic_vector (3 downto 0);
+		 Horas2 : out std_logic_vector (3 downto 0);
+		 Ativado: out std_logic);
+end component;
+
+component relogio is
+   port(clock, mode, set, start, config: in  std_logic;
+       Segundos1 : out std_logic_vector (6 downto 0);
+		 Segundos2 : out std_logic_vector (6 downto 0);
+		 Minutos1 : out std_logic_vector (6 downto 0);
+		 Minutos2 : out std_logic_vector (6 downto 0);
+		 Horas1 : out std_logic_vector (6 downto 0);
+		 Horas2 : out std_logic_vector (6 downto 0));
+end component;
+
+component decodificador is
+	port (
+		Segundos1Sig: in std_logic_vector (3 downto 0); --Sinal de saida do relogio
+		Segundos2Sig: in std_logic_vector (3 downto 0);
+		Minutos1Sig: in std_logic_vector (3 downto 0);
+		Minutos2Sig: in std_logic_vector (3 downto 0);
+		Horas1Sig: in std_logic_vector (3 downto 0);
+		Horas2Sig: in std_logic_vector (3 downto 0);
+		Segundos1 : out std_logic_vector (6 downto 0);
+		Segundos2 : out std_logic_vector (6 downto 0);
+		Minutos1 : out std_logic_vector (6 downto 0);
+		Minutos2 : out std_logic_vector (6 downto 0);
+		Horas1 : out std_logic_vector (6 downto 0);
+		Horas2 : out std_logic_vector (6 downto 0));
+end component;
+
+begin
+ 
+ 
+ process(mode)
+	
+	begin
+	
+         if (mode='0' and mode'EVENT) then
+            if (SignalMode(0)='0' and SignalMode(1)='0') then
+              SignalMode(0)<= '1'
+				  SignalMode(1)<= '0'
+            elsif (SignalMode(0)='1' and SignalMode(1)='0') then
+               SignalMode(0)<= '1'
+				  SignalMode(1)<= '1'
+            elsif (SignalMode(0)='1' and SignalMode(1)='1') then
+              SignalMode(0)<= '0'
+				  SignalMode(1)<= '0'
+            end if;
+		  end if;
+	end process;
+	
+	
+end ProjetoRelogio;

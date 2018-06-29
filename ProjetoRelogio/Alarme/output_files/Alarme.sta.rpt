@@ -1,0 +1,1691 @@
+TimeQuest Timing Analyzer report for Alarme
+Fri Jun 08 14:23:00 2018
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'start'
+ 12. Slow Model Setup: 'set'
+ 13. Slow Model Setup: 'contador0a9:MIN0A9|tc'
+ 14. Slow Model Setup: 'contador0a9:HR0A9|tc'
+ 15. Slow Model Setup: 'config'
+ 16. Slow Model Hold: 'start'
+ 17. Slow Model Hold: 'config'
+ 18. Slow Model Hold: 'contador0a9:HR0A9|tc'
+ 19. Slow Model Hold: 'contador0a9:MIN0A9|tc'
+ 20. Slow Model Hold: 'set'
+ 21. Slow Model Recovery: 'contador0a9:HR0A9|tc'
+ 22. Slow Model Recovery: 'start'
+ 23. Slow Model Recovery: 'config'
+ 24. Slow Model Recovery: 'set'
+ 25. Slow Model Removal: 'start'
+ 26. Slow Model Removal: 'set'
+ 27. Slow Model Removal: 'config'
+ 28. Slow Model Removal: 'contador0a9:HR0A9|tc'
+ 29. Slow Model Minimum Pulse Width: 'start'
+ 30. Slow Model Minimum Pulse Width: 'set'
+ 31. Slow Model Minimum Pulse Width: 'config'
+ 32. Slow Model Minimum Pulse Width: 'contador0a9:MIN0A9|tc'
+ 33. Slow Model Minimum Pulse Width: 'contador0a9:HR0A9|tc'
+ 34. Setup Times
+ 35. Hold Times
+ 36. Clock to Output Times
+ 37. Minimum Clock to Output Times
+ 38. Fast Model Setup Summary
+ 39. Fast Model Hold Summary
+ 40. Fast Model Recovery Summary
+ 41. Fast Model Removal Summary
+ 42. Fast Model Minimum Pulse Width Summary
+ 43. Fast Model Setup: 'start'
+ 44. Fast Model Setup: 'set'
+ 45. Fast Model Setup: 'contador0a9:MIN0A9|tc'
+ 46. Fast Model Setup: 'contador0a9:HR0A9|tc'
+ 47. Fast Model Setup: 'config'
+ 48. Fast Model Hold: 'start'
+ 49. Fast Model Hold: 'config'
+ 50. Fast Model Hold: 'contador0a9:HR0A9|tc'
+ 51. Fast Model Hold: 'contador0a9:MIN0A9|tc'
+ 52. Fast Model Hold: 'set'
+ 53. Fast Model Recovery: 'contador0a9:HR0A9|tc'
+ 54. Fast Model Recovery: 'config'
+ 55. Fast Model Recovery: 'start'
+ 56. Fast Model Recovery: 'set'
+ 57. Fast Model Removal: 'start'
+ 58. Fast Model Removal: 'set'
+ 59. Fast Model Removal: 'contador0a9:HR0A9|tc'
+ 60. Fast Model Removal: 'config'
+ 61. Fast Model Minimum Pulse Width: 'start'
+ 62. Fast Model Minimum Pulse Width: 'set'
+ 63. Fast Model Minimum Pulse Width: 'config'
+ 64. Fast Model Minimum Pulse Width: 'contador0a9:MIN0A9|tc'
+ 65. Fast Model Minimum Pulse Width: 'contador0a9:HR0A9|tc'
+ 66. Setup Times
+ 67. Hold Times
+ 68. Clock to Output Times
+ 69. Minimum Clock to Output Times
+ 70. Multicorner Timing Analysis Summary
+ 71. Setup Times
+ 72. Hold Times
+ 73. Clock to Output Times
+ 74. Minimum Clock to Output Times
+ 75. Setup Transfers
+ 76. Hold Transfers
+ 77. Recovery Transfers
+ 78. Removal Transfers
+ 79. Report TCCS
+ 80. Report RSKM
+ 81. Unconstrained Paths
+ 82. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name      ; Alarme                                             ;
+; Device Family      ; Cyclone II                                         ;
+; Device Name        ; EP2C35F672C6                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                       ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+; Clock Name            ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                   ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+; config                ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { config }                ;
+; contador0a9:HR0A9|tc  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { contador0a9:HR0A9|tc }  ;
+; contador0a9:MIN0A9|tc ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { contador0a9:MIN0A9|tc } ;
+; set                   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { set }                   ;
+; start                 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { start }                 ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                               ;
++-------------+-----------------+-----------------------+---------------------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name            ; Note                                                          ;
++-------------+-----------------+-----------------------+---------------------------------------------------------------+
+; 500.75 MHz  ; 420.17 MHz      ; start                 ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 941.62 MHz  ; 500.0 MHz       ; contador0a9:MIN0A9|tc ; limit due to high minimum pulse width violation (tch)         ;
+; 971.82 MHz  ; 450.05 MHz      ; set                   ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 1290.32 MHz ; 500.0 MHz       ; contador0a9:HR0A9|tc  ; limit due to high minimum pulse width violation (tch)         ;
+; 1610.31 MHz ; 450.05 MHz      ; config                ; limit due to minimum period restriction (max I/O toggle rate) ;
++-------------+-----------------+-----------------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------------------+
+; Slow Model Setup Summary                       ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; start                 ; -0.997 ; -2.699        ;
+; set                   ; -0.249 ; -0.494        ;
+; contador0a9:MIN0A9|tc ; -0.062 ; -0.089        ;
+; contador0a9:HR0A9|tc  ; 0.225  ; 0.000         ;
+; config                ; 0.379  ; 0.000         ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------+
+; Slow Model Hold Summary                        ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; start                 ; -6.024 ; -10.479       ;
+; config                ; 0.391  ; 0.000         ;
+; contador0a9:HR0A9|tc  ; 0.391  ; 0.000         ;
+; contador0a9:MIN0A9|tc ; 0.391  ; 0.000         ;
+; set                   ; 0.391  ; 0.000         ;
++-----------------------+--------+---------------+
+
+
++-----------------------------------------------+
+; Slow Model Recovery Summary                   ;
++----------------------+--------+---------------+
+; Clock                ; Slack  ; End Point TNS ;
++----------------------+--------+---------------+
+; contador0a9:HR0A9|tc ; -3.866 ; -7.732        ;
+; start                ; -1.316 ; -5.264        ;
+; config               ; -0.781 ; -0.781        ;
+; set                  ; -0.260 ; -0.260        ;
++----------------------+--------+---------------+
+
+
++----------------------------------------------+
+; Slow Model Removal Summary                   ;
++----------------------+-------+---------------+
+; Clock                ; Slack ; End Point TNS ;
++----------------------+-------+---------------+
+; start                ; 0.170 ; 0.000         ;
+; set                  ; 1.030 ; 0.000         ;
+; config               ; 1.551 ; 0.000         ;
+; contador0a9:HR0A9|tc ; 1.720 ; 0.000         ;
++----------------------+-------+---------------+
+
+
++------------------------------------------------+
+; Slow Model Minimum Pulse Width Summary         ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; start                 ; -1.380 ; -11.380       ;
+; set                   ; -1.222 ; -3.222        ;
+; config                ; -1.222 ; -2.222        ;
+; contador0a9:MIN0A9|tc ; -0.500 ; -3.000        ;
+; contador0a9:HR0A9|tc  ; -0.500 ; -2.000        ;
++-----------------------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'start'                                                                                                                               ;
++--------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                      ; To Node                        ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+; -0.997 ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 1.000        ; 0.000      ; 2.033      ;
+; -0.869 ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 1.000        ; 0.000      ; 1.905      ;
+; -0.724 ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 1.000        ; 0.000      ; 1.760      ;
+; -0.606 ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 1.000        ; 0.000      ; 1.642      ;
+; -0.424 ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 1.000        ; 0.000      ; 1.460      ;
+; -0.413 ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 1.000        ; 0.000      ; 1.449      ;
+; -0.293 ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 1.000        ; 0.000      ; 1.329      ;
+; -0.257 ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 1.000        ; 0.000      ; 1.293      ;
+; -0.257 ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 1.000        ; 0.000      ; 1.293      ;
+; -0.230 ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 1.000        ; 0.000      ; 1.266      ;
+; -0.226 ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 1.000        ; 0.000      ; 1.262      ;
+; -0.225 ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 1.000        ; 0.000      ; 1.261      ;
+; -0.218 ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 1.000        ; 0.000      ; 1.254      ;
+; -0.152 ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 1.000        ; 0.000      ; 1.188      ;
+; -0.097 ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 1.000        ; 0.000      ; 1.133      ;
+; -0.095 ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 1.000        ; 0.000      ; 1.131      ;
+; -0.072 ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 1.000        ; 0.000      ; 1.108      ;
+; -0.041 ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 1.000        ; 0.000      ; 1.077      ;
+; 0.026  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 1.000        ; 0.000      ; 1.010      ;
+; 0.026  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 1.000        ; 0.000      ; 1.010      ;
+; 0.028  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 1.000        ; 0.000      ; 1.008      ;
+; 0.069  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.967      ;
+; 0.069  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.967      ;
+; 0.070  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.966      ;
+; 0.379  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[0] ; start                 ; start       ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[0]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.657      ;
+; 0.693  ; Contador0a2:HR0A2|contagem[0]  ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; 0.500        ; 2.050      ; 1.893      ;
+; 0.879  ; Contador0a2:HR0A2|contagem[1]  ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; 0.500        ; 2.050      ; 1.707      ;
+; 4.725  ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; 0.500        ; 4.596      ; 0.657      ;
+; 5.225  ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; 1.000        ; 4.596      ; 0.657      ;
+; 6.294  ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc ; start       ; 0.500        ; 6.165      ; 0.657      ;
+; 6.794  ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc ; start       ; 1.000        ; 6.165      ; 0.657      ;
++--------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'set'                                                                                                                                           ;
++--------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.249 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|signalreset ; config       ; set         ; 0.500        ; 0.021      ; 0.806      ;
+; -0.245 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|signalcont  ; config       ; set         ; 0.500        ; 0.021      ; 0.802      ;
+; -0.029 ; LogicaAlarme:LOGICADOALARME|signalreset  ; LogicaAlarme:LOGICADOALARME|signalcont  ; set          ; set         ; 1.000        ; 0.000      ; 1.065      ;
+; 0.117  ; LogicaAlarme:LOGICADOALARME|signalcont   ; LogicaAlarme:LOGICADOALARME|signalreset ; set          ; set         ; 1.000        ; 0.000      ; 0.919      ;
+; 0.379  ; LogicaAlarme:LOGICADOALARME|signalcont   ; LogicaAlarme:LOGICADOALARME|signalcont  ; set          ; set         ; 1.000        ; 0.000      ; 0.657      ;
++--------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'contador0a9:MIN0A9|tc'                                                                                                                         ;
++--------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node                      ; To Node                        ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+; -0.062 ; contador0a5:MIN0A5|contagem[2] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 1.098      ;
+; -0.027 ; contador0a5:MIN0A5|contagem[1] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 1.063      ;
+; 0.230  ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.806      ;
+; 0.231  ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.805      ;
+; 0.379  ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[0] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; contador0a5:MIN0A5|contagem[1] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; contador0a5:MIN0A5|contagem[2] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.657      ;
++--------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'contador0a9:HR0A9|tc'                                                                                                                     ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock          ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; 0.225 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 0.811      ;
+; 0.237 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 0.799      ;
+; 0.379 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 0.657      ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'config'                                                                                                                                        ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.379 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; config       ; config      ; 1.000        ; 0.000      ; 0.657      ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'start'                                                                                                                                ;
++--------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                      ; To Node                        ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+; -6.024 ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc ; start       ; 0.000        ; 6.165      ; 0.657      ;
+; -5.524 ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc ; start       ; -0.500       ; 6.165      ; 0.657      ;
+; -4.455 ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; 0.000        ; 4.596      ; 0.657      ;
+; -3.955 ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; -0.500       ; 4.596      ; 0.657      ;
+; -0.109 ; Contador0a2:HR0A2|contagem[1]  ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; -0.500       ; 2.050      ; 1.707      ;
+; 0.077  ; Contador0a2:HR0A2|contagem[0]  ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; -0.500       ; 2.050      ; 1.893      ;
+; 0.391  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[0] ; start                 ; start       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[0]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.700  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.966      ;
+; 0.701  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.967      ;
+; 0.701  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.967      ;
+; 0.742  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 0.000        ; 0.000      ; 1.008      ;
+; 0.744  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 0.000        ; 0.000      ; 1.010      ;
+; 0.744  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 0.000        ; 0.000      ; 1.010      ;
+; 0.811  ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 0.000        ; 0.000      ; 1.077      ;
+; 0.842  ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 0.000        ; 0.000      ; 1.108      ;
+; 0.865  ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 0.000        ; 0.000      ; 1.131      ;
+; 0.867  ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 0.000        ; 0.000      ; 1.133      ;
+; 0.868  ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 0.000        ; 0.000      ; 1.134      ;
+; 0.922  ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 0.000        ; 0.000      ; 1.188      ;
+; 0.988  ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 0.000        ; 0.000      ; 1.254      ;
+; 0.995  ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 0.000        ; 0.000      ; 1.261      ;
+; 0.996  ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 0.000        ; 0.000      ; 1.262      ;
+; 1.000  ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 0.000        ; 0.000      ; 1.266      ;
+; 1.027  ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 0.000        ; 0.000      ; 1.293      ;
+; 1.027  ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 0.000        ; 0.000      ; 1.293      ;
+; 1.063  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 0.000        ; 0.000      ; 1.329      ;
+; 1.183  ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 0.000        ; 0.000      ; 1.449      ;
+; 1.194  ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 0.000        ; 0.000      ; 1.460      ;
+; 1.364  ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 0.000        ; 0.000      ; 1.630      ;
+; 1.509  ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 0.000        ; 0.000      ; 1.775      ;
+; 1.589  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 0.000        ; 0.000      ; 1.855      ;
++--------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'config'                                                                                                                                         ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; config       ; config      ; 0.000        ; 0.000      ; 0.657      ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'contador0a9:HR0A9|tc'                                                                                                                      ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock          ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; 0.391 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 0.657      ;
+; 0.533 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 0.799      ;
+; 0.545 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 0.811      ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'contador0a9:MIN0A9|tc'                                                                                                                         ;
++-------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node                      ; To Node                        ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.391 ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[0] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; contador0a5:MIN0A5|contagem[2] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; contador0a5:MIN0A5|contagem[1] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.657      ;
+; 0.539 ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.805      ;
+; 0.540 ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.806      ;
+; 0.797 ; contador0a5:MIN0A5|contagem[1] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 1.063      ;
+; 0.832 ; contador0a5:MIN0A5|contagem[2] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 1.098      ;
++-------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'set'                                                                                                                                           ;
++-------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; LogicaAlarme:LOGICADOALARME|signalcont   ; LogicaAlarme:LOGICADOALARME|signalcont  ; set          ; set         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.653 ; LogicaAlarme:LOGICADOALARME|signalcont   ; LogicaAlarme:LOGICADOALARME|signalreset ; set          ; set         ; 0.000        ; 0.000      ; 0.919      ;
+; 0.799 ; LogicaAlarme:LOGICADOALARME|signalreset  ; LogicaAlarme:LOGICADOALARME|signalcont  ; set          ; set         ; 0.000        ; 0.000      ; 1.065      ;
+; 1.015 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|signalcont  ; config       ; set         ; -0.500       ; 0.021      ; 0.802      ;
+; 1.019 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|signalreset ; config       ; set         ; -0.500       ; 0.021      ; 0.806      ;
++-------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'contador0a9:HR0A9|tc'                                                                                                                   ;
++--------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock          ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; -3.866 ; contador0a9:HR0A9|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -2.050     ; 2.352      ;
+; -3.866 ; contador0a9:HR0A9|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -2.050     ; 2.352      ;
+; -3.786 ; contador0a9:HR0A9|contagem[3] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -2.050     ; 2.272      ;
+; -3.786 ; contador0a9:HR0A9|contagem[3] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -2.050     ; 2.272      ;
+; -3.641 ; contador0a9:HR0A9|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -2.050     ; 2.127      ;
+; -3.641 ; contador0a9:HR0A9|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -2.050     ; 2.127      ;
+; -3.379 ; contador0a9:HR0A9|contagem[2] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -2.050     ; 1.865      ;
+; -3.379 ; contador0a9:HR0A9|contagem[2] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -2.050     ; 1.865      ;
+; -1.354 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 2.390      ;
+; -1.354 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 2.390      ;
+; -0.950 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 1.986      ;
+; -0.950 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 1.986      ;
++--------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'start'                                                                                                                         ;
++--------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+; -1.316 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 1.000        ; 0.000      ; 2.352      ;
+; -1.316 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 1.000        ; 0.000      ; 2.352      ;
+; -1.316 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 1.000        ; 0.000      ; 2.352      ;
+; -1.316 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 1.000        ; 0.000      ; 2.352      ;
+; -1.236 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 1.000        ; 0.000      ; 2.272      ;
+; -1.236 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 1.000        ; 0.000      ; 2.272      ;
+; -1.236 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 1.000        ; 0.000      ; 2.272      ;
+; -1.236 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 1.000        ; 0.000      ; 2.272      ;
+; -1.091 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 1.000        ; 0.000      ; 2.127      ;
+; -1.091 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 1.000        ; 0.000      ; 2.127      ;
+; -1.091 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 1.000        ; 0.000      ; 2.127      ;
+; -1.091 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 1.000        ; 0.000      ; 2.127      ;
+; -0.829 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 1.000        ; 0.000      ; 1.865      ;
+; -0.829 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 1.000        ; 0.000      ; 1.865      ;
+; -0.829 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 1.000        ; 0.000      ; 1.865      ;
+; -0.829 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 1.000        ; 0.000      ; 1.865      ;
+; 0.196  ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 2.050      ; 2.390      ;
+; 0.196  ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 2.050      ; 2.390      ;
+; 0.196  ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 2.050      ; 2.390      ;
+; 0.196  ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 2.050      ; 2.390      ;
+; 0.600  ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 2.050      ; 1.986      ;
+; 0.600  ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 2.050      ; 1.986      ;
+; 0.600  ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 2.050      ; 1.986      ;
+; 0.600  ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 2.050      ; 1.986      ;
++--------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'config'                                                                                                                                     ;
++--------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.781 ; LogicaAlarme:LOGICADOALARME|signalreset ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; set          ; config      ; 0.500        ; -0.021     ; 1.296      ;
++--------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'set'                                                                                                                                       ;
++--------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.260 ; LogicaAlarme:LOGICADOALARME|signalreset ; LogicaAlarme:LOGICADOALARME|signalreset ; set          ; set         ; 1.000        ; 0.000      ; 1.296      ;
++--------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'start'                                                                                                                         ;
++-------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+; 0.170 ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 2.050      ; 1.986      ;
+; 0.170 ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 2.050      ; 1.986      ;
+; 0.170 ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 2.050      ; 1.986      ;
+; 0.170 ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 2.050      ; 1.986      ;
+; 0.574 ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 2.050      ; 2.390      ;
+; 0.574 ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 2.050      ; 2.390      ;
+; 0.574 ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 2.050      ; 2.390      ;
+; 0.574 ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 2.050      ; 2.390      ;
+; 1.599 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 0.000        ; 0.000      ; 1.865      ;
+; 1.599 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 0.000        ; 0.000      ; 1.865      ;
+; 1.599 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 0.000        ; 0.000      ; 1.865      ;
+; 1.599 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 0.000        ; 0.000      ; 1.865      ;
+; 1.861 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 0.000        ; 0.000      ; 2.127      ;
+; 1.861 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 0.000        ; 0.000      ; 2.127      ;
+; 1.861 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 0.000        ; 0.000      ; 2.127      ;
+; 1.861 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 0.000        ; 0.000      ; 2.127      ;
+; 2.006 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 0.000        ; 0.000      ; 2.272      ;
+; 2.006 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 0.000        ; 0.000      ; 2.272      ;
+; 2.006 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 0.000        ; 0.000      ; 2.272      ;
+; 2.006 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 0.000        ; 0.000      ; 2.272      ;
+; 2.086 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 0.000        ; 0.000      ; 2.352      ;
+; 2.086 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 0.000        ; 0.000      ; 2.352      ;
+; 2.086 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 0.000        ; 0.000      ; 2.352      ;
+; 2.086 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 0.000        ; 0.000      ; 2.352      ;
++-------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'set'                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.030 ; LogicaAlarme:LOGICADOALARME|signalreset ; LogicaAlarme:LOGICADOALARME|signalreset ; set          ; set         ; 0.000        ; 0.000      ; 1.296      ;
++-------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'config'                                                                                                                                     ;
++-------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.551 ; LogicaAlarme:LOGICADOALARME|signalreset ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; set          ; config      ; -0.500       ; -0.021     ; 1.296      ;
++-------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'contador0a9:HR0A9|tc'                                                                                                                   ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock          ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; 1.720 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 1.986      ;
+; 1.720 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 1.986      ;
+; 2.124 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 2.390      ;
+; 2.124 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 2.390      ;
+; 4.149 ; contador0a9:HR0A9|contagem[2] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -2.050     ; 1.865      ;
+; 4.149 ; contador0a9:HR0A9|contagem[2] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -2.050     ; 1.865      ;
+; 4.411 ; contador0a9:HR0A9|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -2.050     ; 2.127      ;
+; 4.411 ; contador0a9:HR0A9|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -2.050     ; 2.127      ;
+; 4.556 ; contador0a9:HR0A9|contagem[3] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -2.050     ; 2.272      ;
+; 4.556 ; contador0a9:HR0A9|contagem[3] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -2.050     ; 2.272      ;
+; 4.636 ; contador0a9:HR0A9|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -2.050     ; 2.352      ;
+; 4.636 ; contador0a9:HR0A9|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -2.050     ; 2.352      ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'start'                                                                         ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; start ; Rise       ; start                          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:HR0A9|contagem[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:HR0A9|contagem[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:HR0A9|contagem[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:HR0A9|contagem[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:HR0A9|contagem[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:HR0A9|contagem[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:HR0A9|contagem[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:HR0A9|contagem[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:HR0A9|tc           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:HR0A9|tc           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:MIN0A9|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:MIN0A9|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:MIN0A9|contagem[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:MIN0A9|contagem[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:MIN0A9|contagem[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:MIN0A9|contagem[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:MIN0A9|contagem[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:MIN0A9|contagem[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:MIN0A9|tc          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:MIN0A9|tc          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; HR0A9|contagem[0]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; HR0A9|contagem[0]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; HR0A9|contagem[1]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; HR0A9|contagem[1]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; HR0A9|contagem[2]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; HR0A9|contagem[2]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; HR0A9|contagem[3]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; HR0A9|contagem[3]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; HR0A9|tc|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; HR0A9|tc|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; MIN0A9|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; MIN0A9|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; MIN0A9|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; MIN0A9|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; MIN0A9|contagem[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; MIN0A9|contagem[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; MIN0A9|contagem[3]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; MIN0A9|contagem[3]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; MIN0A9|tc|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; MIN0A9|tc|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb|combout                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb|combout                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Rise       ; comb|datac                     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Rise       ; comb|datac                     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb~3|combout                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb~3|combout                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Rise       ; comb~3|datac                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Rise       ; comb~3|datac                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb~4clkctrl|inclk[0]         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb~4clkctrl|inclk[0]         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb~4clkctrl|outclk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb~4clkctrl|outclk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb~clkctrl|inclk[0]          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb~clkctrl|inclk[0]          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb~clkctrl|outclk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb~clkctrl|outclk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Rise       ; start|combout                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Rise       ; start|combout                  ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'set'                                                                                    ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                  ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; set   ; Rise       ; set                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; set   ; Fall       ; LogicaAlarme:LOGICADOALARME|signalcont  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; set   ; Fall       ; LogicaAlarme:LOGICADOALARME|signalcont  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; set   ; Fall       ; LogicaAlarme:LOGICADOALARME|signalreset ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; set   ; Fall       ; LogicaAlarme:LOGICADOALARME|signalreset ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; set   ; Rise       ; LOGICADOALARME|signalcont|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; set   ; Rise       ; LOGICADOALARME|signalcont|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; set   ; Rise       ; LOGICADOALARME|signalreset|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; set   ; Rise       ; LOGICADOALARME|signalreset|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; set   ; Rise       ; set|combout                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; set   ; Rise       ; set|combout                             ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'config'                                                                                   ;
++--------+--------------+----------------+------------------+--------+------------+------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target                                   ;
++--------+--------------+----------------+------------------+--------+------------+------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; config ; Rise       ; config                                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; config ; Rise       ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; config ; Rise       ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; config ; Rise       ; LOGICADOALARME|FFJK|temp|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; config ; Rise       ; LOGICADOALARME|FFJK|temp|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; config ; Rise       ; config|combout                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; config ; Rise       ; config|combout                           ;
++--------+--------------+----------------+------------------+--------+------------+------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'contador0a9:MIN0A9|tc'                                                                         ;
++--------+--------------+----------------+------------------+-----------------------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+-----------------------+------------+--------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[2] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc|regout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc|regout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc~clkctrl|inclk[0]     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc~clkctrl|inclk[0]     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc~clkctrl|outclk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc~clkctrl|outclk       ;
++--------+--------------+----------------+------------------+-----------------------+------------+--------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'contador0a9:HR0A9|tc'                                                                        ;
++--------+--------------+----------------+------------------+----------------------+------------+-------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                ; Clock Edge ; Target                        ;
++--------+--------------+----------------+------------------+----------------------+------------+-------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; Contador0a2:HR0A2|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; Contador0a2:HR0A2|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; Contador0a2:HR0A2|contagem[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; Contador0a2:HR0A2|contagem[1] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; HR0A2|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; HR0A2|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; HR0A2|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; HR0A2|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc|regout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc|regout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc~clkctrl|inclk[0]     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc~clkctrl|inclk[0]     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc~clkctrl|outclk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc~clkctrl|outclk       ;
++--------+--------------+----------------+------------------+----------------------+------------+-------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; reset     ; start      ; -2.538 ; -2.538 ; Fall       ; start           ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; reset     ; start      ; 4.343 ; 4.343 ; Fall       ; start           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                       ;
++--------------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port    ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++--------------+-----------------------+--------+--------+------------+-----------------------+
+; Ativado      ; contador0a9:HR0A9|tc  ; 7.833  ; 7.833  ; Rise       ; contador0a9:HR0A9|tc  ;
+; Horas2[*]    ; contador0a9:HR0A9|tc  ; 6.489  ; 6.489  ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[0]   ; contador0a9:HR0A9|tc  ; 6.228  ; 6.228  ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[1]   ; contador0a9:HR0A9|tc  ; 6.489  ; 6.489  ; Rise       ; contador0a9:HR0A9|tc  ;
+; Ativado      ; contador0a9:MIN0A9|tc ; 8.661  ; 8.661  ; Rise       ; contador0a9:MIN0A9|tc ;
+; Minutos2[*]  ; contador0a9:MIN0A9|tc ; 5.988  ; 5.988  ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[0] ; contador0a9:MIN0A9|tc ; 5.948  ; 5.948  ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[1] ; contador0a9:MIN0A9|tc ; 5.968  ; 5.968  ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[2] ; contador0a9:MIN0A9|tc ; 5.988  ; 5.988  ; Rise       ; contador0a9:MIN0A9|tc ;
+; Ativado      ; start                 ; 11.773 ; 11.773 ; Fall       ; start                 ;
+; Horas1[*]    ; start                 ; 8.551  ; 8.551  ; Fall       ; start                 ;
+;  Horas1[0]   ; start                 ; 8.285  ; 8.285  ; Fall       ; start                 ;
+;  Horas1[1]   ; start                 ; 8.284  ; 8.284  ; Fall       ; start                 ;
+;  Horas1[2]   ; start                 ; 8.551  ; 8.551  ; Fall       ; start                 ;
+;  Horas1[3]   ; start                 ; 8.275  ; 8.275  ; Fall       ; start                 ;
+; Minutos1[*]  ; start                 ; 10.205 ; 10.205 ; Fall       ; start                 ;
+;  Minutos1[0] ; start                 ; 10.070 ; 10.070 ; Fall       ; start                 ;
+;  Minutos1[1] ; start                 ; 10.111 ; 10.111 ; Fall       ; start                 ;
+;  Minutos1[2] ; start                 ; 10.093 ; 10.093 ; Fall       ; start                 ;
+;  Minutos1[3] ; start                 ; 10.205 ; 10.205 ; Fall       ; start                 ;
++--------------+-----------------------+--------+--------+------------+-----------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                               ;
++--------------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port    ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++--------------+-----------------------+--------+--------+------------+-----------------------+
+; Ativado      ; contador0a9:HR0A9|tc  ; 7.354  ; 7.354  ; Rise       ; contador0a9:HR0A9|tc  ;
+; Horas2[*]    ; contador0a9:HR0A9|tc  ; 6.228  ; 6.228  ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[0]   ; contador0a9:HR0A9|tc  ; 6.228  ; 6.228  ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[1]   ; contador0a9:HR0A9|tc  ; 6.489  ; 6.489  ; Rise       ; contador0a9:HR0A9|tc  ;
+; Ativado      ; contador0a9:MIN0A9|tc ; 8.213  ; 8.213  ; Rise       ; contador0a9:MIN0A9|tc ;
+; Minutos2[*]  ; contador0a9:MIN0A9|tc ; 5.948  ; 5.948  ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[0] ; contador0a9:MIN0A9|tc ; 5.948  ; 5.948  ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[1] ; contador0a9:MIN0A9|tc ; 5.968  ; 5.968  ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[2] ; contador0a9:MIN0A9|tc ; 5.988  ; 5.988  ; Rise       ; contador0a9:MIN0A9|tc ;
+; Ativado      ; start                 ; 9.620  ; 9.620  ; Fall       ; start                 ;
+; Horas1[*]    ; start                 ; 8.275  ; 8.275  ; Fall       ; start                 ;
+;  Horas1[0]   ; start                 ; 8.285  ; 8.285  ; Fall       ; start                 ;
+;  Horas1[1]   ; start                 ; 8.284  ; 8.284  ; Fall       ; start                 ;
+;  Horas1[2]   ; start                 ; 8.551  ; 8.551  ; Fall       ; start                 ;
+;  Horas1[3]   ; start                 ; 8.275  ; 8.275  ; Fall       ; start                 ;
+; Minutos1[*]  ; start                 ; 10.070 ; 10.070 ; Fall       ; start                 ;
+;  Minutos1[0] ; start                 ; 10.070 ; 10.070 ; Fall       ; start                 ;
+;  Minutos1[1] ; start                 ; 10.111 ; 10.111 ; Fall       ; start                 ;
+;  Minutos1[2] ; start                 ; 10.093 ; 10.093 ; Fall       ; start                 ;
+;  Minutos1[3] ; start                 ; 10.205 ; 10.205 ; Fall       ; start                 ;
++--------------+-----------------------+--------+--------+------------+-----------------------+
+
+
++-----------------------------------------------+
+; Fast Model Setup Summary                      ;
++-----------------------+-------+---------------+
+; Clock                 ; Slack ; End Point TNS ;
++-----------------------+-------+---------------+
+; start                 ; 0.108 ; 0.000         ;
+; set                   ; 0.144 ; 0.000         ;
+; contador0a9:MIN0A9|tc ; 0.512 ; 0.000         ;
+; contador0a9:HR0A9|tc  ; 0.627 ; 0.000         ;
+; config                ; 0.665 ; 0.000         ;
++-----------------------+-------+---------------+
+
+
++------------------------------------------------+
+; Fast Model Hold Summary                        ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; start                 ; -3.300 ; -5.739        ;
+; config                ; 0.215  ; 0.000         ;
+; contador0a9:HR0A9|tc  ; 0.215  ; 0.000         ;
+; contador0a9:MIN0A9|tc ; 0.215  ; 0.000         ;
+; set                   ; 0.215  ; 0.000         ;
++-----------------------+--------+---------------+
+
+
++-----------------------------------------------+
+; Fast Model Recovery Summary                   ;
++----------------------+--------+---------------+
+; Clock                ; Slack  ; End Point TNS ;
++----------------------+--------+---------------+
+; contador0a9:HR0A9|tc ; -1.676 ; -3.352        ;
+; config               ; -0.218 ; -0.218        ;
+; start                ; -0.176 ; -0.704        ;
+; set                  ; 0.298  ; 0.000         ;
++----------------------+--------+---------------+
+
+
++----------------------------------------------+
+; Fast Model Removal Summary                   ;
++----------------------+-------+---------------+
+; Clock                ; Slack ; End Point TNS ;
++----------------------+-------+---------------+
+; start                ; 0.379 ; 0.000         ;
+; set                  ; 0.582 ; 0.000         ;
+; contador0a9:HR0A9|tc ; 0.879 ; 0.000         ;
+; config               ; 1.098 ; 0.000         ;
++----------------------+-------+---------------+
+
+
++------------------------------------------------+
+; Fast Model Minimum Pulse Width Summary         ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; start                 ; -1.380 ; -11.380       ;
+; set                   ; -1.222 ; -3.222        ;
+; config                ; -1.222 ; -2.222        ;
+; contador0a9:MIN0A9|tc ; -0.500 ; -3.000        ;
+; contador0a9:HR0A9|tc  ; -0.500 ; -2.000        ;
++-----------------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'start'                                                                                                                              ;
++-------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack ; From Node                      ; To Node                        ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+; 0.108 ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 1.000        ; 0.000      ; 0.924      ;
+; 0.145 ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 1.000        ; 0.000      ; 0.887      ;
+; 0.230 ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 1.000        ; 0.000      ; 0.802      ;
+; 0.261 ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 1.000        ; 0.000      ; 0.771      ;
+; 0.336 ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 1.000        ; 0.000      ; 0.696      ;
+; 0.357 ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 1.000        ; 0.000      ; 0.675      ;
+; 0.394 ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 1.000        ; 0.000      ; 0.638      ;
+; 0.422 ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 1.000        ; 0.000      ; 0.610      ;
+; 0.422 ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.610      ;
+; 0.430 ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 1.000        ; 0.000      ; 0.602      ;
+; 0.431 ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 1.000        ; 0.000      ; 0.601      ;
+; 0.432 ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 1.000        ; 0.000      ; 0.600      ;
+; 0.438 ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.594      ;
+; 0.477 ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 1.000        ; 0.000      ; 0.555      ;
+; 0.490 ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.542      ;
+; 0.492 ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.540      ;
+; 0.506 ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 1.000        ; 0.000      ; 0.526      ;
+; 0.512 ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.520      ;
+; 0.538 ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 1.000        ; 0.000      ; 0.494      ;
+; 0.539 ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 1.000        ; 0.000      ; 0.493      ;
+; 0.539 ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 1.000        ; 0.000      ; 0.493      ;
+; 0.549 ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.483      ;
+; 0.550 ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.482      ;
+; 0.551 ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.481      ;
+; 0.648 ; Contador0a2:HR0A2|contagem[0]  ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; 0.500        ; 1.000      ; 0.884      ;
+; 0.665 ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[0] ; start                 ; start       ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[0]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 1.000        ; 0.000      ; 0.367      ;
+; 0.746 ; Contador0a2:HR0A2|contagem[1]  ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; 0.500        ; 1.000      ; 0.786      ;
+; 2.819 ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; 0.500        ; 2.513      ; 0.367      ;
+; 3.319 ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; 1.000        ; 2.513      ; 0.367      ;
+; 3.680 ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc ; start       ; 0.500        ; 3.374      ; 0.367      ;
+; 4.180 ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc ; start       ; 1.000        ; 3.374      ; 0.367      ;
++-------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'set'                                                                                                                                          ;
++-------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.144 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|signalreset ; config       ; set         ; 0.500        ; 0.016      ; 0.404      ;
+; 0.148 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|signalcont  ; config       ; set         ; 0.500        ; 0.016      ; 0.400      ;
+; 0.520 ; LogicaAlarme:LOGICADOALARME|signalreset  ; LogicaAlarme:LOGICADOALARME|signalcont  ; set          ; set         ; 1.000        ; 0.000      ; 0.512      ;
+; 0.565 ; LogicaAlarme:LOGICADOALARME|signalcont   ; LogicaAlarme:LOGICADOALARME|signalreset ; set          ; set         ; 1.000        ; 0.000      ; 0.467      ;
+; 0.665 ; LogicaAlarme:LOGICADOALARME|signalcont   ; LogicaAlarme:LOGICADOALARME|signalcont  ; set          ; set         ; 1.000        ; 0.000      ; 0.367      ;
++-------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'contador0a9:MIN0A9|tc'                                                                                                                        ;
++-------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node                      ; To Node                        ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.512 ; contador0a5:MIN0A5|contagem[2] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.520      ;
+; 0.517 ; contador0a5:MIN0A5|contagem[1] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.515      ;
+; 0.632 ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.400      ;
+; 0.633 ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.399      ;
+; 0.665 ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[0] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; contador0a5:MIN0A5|contagem[1] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; contador0a5:MIN0A5|contagem[2] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 1.000        ; 0.000      ; 0.367      ;
++-------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'contador0a9:HR0A9|tc'                                                                                                                     ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock          ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; 0.627 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 0.405      ;
+; 0.635 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 0.397      ;
+; 0.665 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 0.367      ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'config'                                                                                                                                        ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.665 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; config       ; config      ; 1.000        ; 0.000      ; 0.367      ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'start'                                                                                                                                ;
++--------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                      ; To Node                        ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+; -3.300 ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc ; start       ; 0.000        ; 3.374      ; 0.367      ;
+; -2.800 ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc          ; contador0a9:MIN0A9|tc ; start       ; -0.500       ; 3.374      ; 0.367      ;
+; -2.439 ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; 0.000        ; 2.513      ; 0.367      ;
+; -1.939 ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; -0.500       ; 2.513      ; 0.367      ;
+; 0.134  ; Contador0a2:HR0A2|contagem[1]  ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; -0.500       ; 1.000      ; 0.786      ;
+; 0.215  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[0] ; start                 ; start       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[0]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.232  ; Contador0a2:HR0A2|contagem[0]  ; contador0a9:HR0A9|tc           ; contador0a9:HR0A9|tc  ; start       ; -0.500       ; 1.000      ; 0.884      ;
+; 0.329  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.481      ;
+; 0.330  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.482      ;
+; 0.331  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.483      ;
+; 0.341  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 0.000        ; 0.000      ; 0.493      ;
+; 0.341  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 0.000        ; 0.000      ; 0.493      ;
+; 0.342  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 0.000        ; 0.000      ; 0.494      ;
+; 0.368  ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.520      ;
+; 0.374  ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 0.000        ; 0.000      ; 0.526      ;
+; 0.388  ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[3]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.540      ;
+; 0.390  ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.542      ;
+; 0.392  ; contador0a9:HR0A9|contagem[2]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 0.000        ; 0.000      ; 0.544      ;
+; 0.403  ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 0.000        ; 0.000      ; 0.555      ;
+; 0.442  ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|contagem[1]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.594      ;
+; 0.448  ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[2] ; start                 ; start       ; 0.000        ; 0.000      ; 0.600      ;
+; 0.449  ; contador0a9:MIN0A9|contagem[1] ; contador0a9:MIN0A9|contagem[3] ; start                 ; start       ; 0.000        ; 0.000      ; 0.601      ;
+; 0.450  ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 0.000        ; 0.000      ; 0.602      ;
+; 0.458  ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|contagem[1] ; start                 ; start       ; 0.000        ; 0.000      ; 0.610      ;
+; 0.458  ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|contagem[2]  ; start                 ; start       ; 0.000        ; 0.000      ; 0.610      ;
+; 0.486  ; contador0a9:MIN0A9|contagem[0] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 0.000        ; 0.000      ; 0.638      ;
+; 0.523  ; contador0a9:MIN0A9|contagem[3] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 0.000        ; 0.000      ; 0.675      ;
+; 0.544  ; contador0a9:MIN0A9|contagem[2] ; contador0a9:MIN0A9|tc          ; start                 ; start       ; 0.000        ; 0.000      ; 0.696      ;
+; 0.598  ; contador0a9:HR0A9|contagem[1]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 0.000        ; 0.000      ; 0.750      ;
+; 0.658  ; contador0a9:HR0A9|contagem[3]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 0.000        ; 0.000      ; 0.810      ;
+; 0.720  ; contador0a9:HR0A9|contagem[0]  ; contador0a9:HR0A9|tc           ; start                 ; start       ; 0.000        ; 0.000      ; 0.872      ;
++--------+--------------------------------+--------------------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'config'                                                                                                                                         ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; config       ; config      ; 0.000        ; 0.000      ; 0.367      ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'contador0a9:HR0A9|tc'                                                                                                                      ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock          ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; 0.215 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 0.367      ;
+; 0.245 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 0.397      ;
+; 0.253 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 0.405      ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'contador0a9:MIN0A9|tc'                                                                                                                         ;
++-------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node                      ; To Node                        ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.215 ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[0] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; contador0a5:MIN0A5|contagem[2] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; contador0a5:MIN0A5|contagem[1] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.367      ;
+; 0.247 ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.399      ;
+; 0.248 ; contador0a5:MIN0A5|contagem[0] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.400      ;
+; 0.363 ; contador0a5:MIN0A5|contagem[1] ; contador0a5:MIN0A5|contagem[2] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.515      ;
+; 0.368 ; contador0a5:MIN0A5|contagem[2] ; contador0a5:MIN0A5|contagem[1] ; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 0.000        ; 0.000      ; 0.520      ;
++-------+--------------------------------+--------------------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'set'                                                                                                                                           ;
++-------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; LogicaAlarme:LOGICADOALARME|signalcont   ; LogicaAlarme:LOGICADOALARME|signalcont  ; set          ; set         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.315 ; LogicaAlarme:LOGICADOALARME|signalcont   ; LogicaAlarme:LOGICADOALARME|signalreset ; set          ; set         ; 0.000        ; 0.000      ; 0.467      ;
+; 0.360 ; LogicaAlarme:LOGICADOALARME|signalreset  ; LogicaAlarme:LOGICADOALARME|signalcont  ; set          ; set         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.732 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|signalcont  ; config       ; set         ; -0.500       ; 0.016      ; 0.400      ;
+; 0.736 ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; LogicaAlarme:LOGICADOALARME|signalreset ; config       ; set         ; -0.500       ; 0.016      ; 0.404      ;
++-------+------------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'contador0a9:HR0A9|tc'                                                                                                                   ;
++--------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock          ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; -1.676 ; contador0a9:HR0A9|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -1.000     ; 1.208      ;
+; -1.676 ; contador0a9:HR0A9|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -1.000     ; 1.208      ;
+; -1.614 ; contador0a9:HR0A9|contagem[3] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -1.000     ; 1.146      ;
+; -1.614 ; contador0a9:HR0A9|contagem[3] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -1.000     ; 1.146      ;
+; -1.554 ; contador0a9:HR0A9|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -1.000     ; 1.086      ;
+; -1.554 ; contador0a9:HR0A9|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -1.000     ; 1.086      ;
+; -1.441 ; contador0a9:HR0A9|contagem[2] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -1.000     ; 0.973      ;
+; -1.441 ; contador0a9:HR0A9|contagem[2] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; 0.500        ; -1.000     ; 0.973      ;
+; -0.188 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 1.220      ;
+; -0.188 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 1.220      ;
+; 0.001  ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 1.031      ;
+; 0.001  ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 1.000        ; 0.000      ; 1.031      ;
++--------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'config'                                                                                                                                     ;
++--------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.218 ; LogicaAlarme:LOGICADOALARME|signalreset ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; set          ; config      ; 0.500        ; -0.016     ; 0.734      ;
++--------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'start'                                                                                                                         ;
++--------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+; -0.176 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 1.000        ; 0.000      ; 1.208      ;
+; -0.176 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 1.000        ; 0.000      ; 1.208      ;
+; -0.176 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 1.000        ; 0.000      ; 1.208      ;
+; -0.176 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 1.000        ; 0.000      ; 1.208      ;
+; -0.114 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 1.000        ; 0.000      ; 1.146      ;
+; -0.114 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 1.000        ; 0.000      ; 1.146      ;
+; -0.114 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 1.000        ; 0.000      ; 1.146      ;
+; -0.114 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 1.000        ; 0.000      ; 1.146      ;
+; -0.054 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 1.000        ; 0.000      ; 1.086      ;
+; -0.054 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 1.000        ; 0.000      ; 1.086      ;
+; -0.054 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 1.000        ; 0.000      ; 1.086      ;
+; -0.054 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 1.000        ; 0.000      ; 1.086      ;
+; 0.059  ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 1.000        ; 0.000      ; 0.973      ;
+; 0.059  ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 1.000        ; 0.000      ; 0.973      ;
+; 0.059  ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 1.000        ; 0.000      ; 0.973      ;
+; 0.059  ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 1.000        ; 0.000      ; 0.973      ;
+; 0.312  ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 1.000      ; 1.220      ;
+; 0.312  ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 1.000      ; 1.220      ;
+; 0.312  ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 1.000      ; 1.220      ;
+; 0.312  ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 1.000      ; 1.220      ;
+; 0.501  ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 1.000      ; 1.031      ;
+; 0.501  ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 1.000      ; 1.031      ;
+; 0.501  ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 1.000      ; 1.031      ;
+; 0.501  ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|tc ; start       ; 0.500        ; 1.000      ; 1.031      ;
++--------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'set'                                                                                                                                      ;
++-------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.298 ; LogicaAlarme:LOGICADOALARME|signalreset ; LogicaAlarme:LOGICADOALARME|signalreset ; set          ; set         ; 1.000        ; 0.000      ; 0.734      ;
++-------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'start'                                                                                                                         ;
++-------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+; 0.379 ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 1.000      ; 1.031      ;
+; 0.379 ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 1.000      ; 1.031      ;
+; 0.379 ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 1.000      ; 1.031      ;
+; 0.379 ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 1.000      ; 1.031      ;
+; 0.568 ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 1.000      ; 1.220      ;
+; 0.568 ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 1.000      ; 1.220      ;
+; 0.568 ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 1.000      ; 1.220      ;
+; 0.568 ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|tc ; start       ; -0.500       ; 1.000      ; 1.220      ;
+; 0.821 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 0.000        ; 0.000      ; 0.973      ;
+; 0.821 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 0.000        ; 0.000      ; 0.973      ;
+; 0.821 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 0.000        ; 0.000      ; 0.973      ;
+; 0.821 ; contador0a9:HR0A9|contagem[2] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 0.000        ; 0.000      ; 0.973      ;
+; 0.934 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 0.000        ; 0.000      ; 1.086      ;
+; 0.934 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 0.000        ; 0.000      ; 1.086      ;
+; 0.934 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 0.000        ; 0.000      ; 1.086      ;
+; 0.934 ; contador0a9:HR0A9|contagem[1] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 0.000        ; 0.000      ; 1.086      ;
+; 0.994 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 0.000        ; 0.000      ; 1.146      ;
+; 0.994 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 0.000        ; 0.000      ; 1.146      ;
+; 0.994 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 0.000        ; 0.000      ; 1.146      ;
+; 0.994 ; contador0a9:HR0A9|contagem[3] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 0.000        ; 0.000      ; 1.146      ;
+; 1.056 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[2] ; start                ; start       ; 0.000        ; 0.000      ; 1.208      ;
+; 1.056 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[3] ; start                ; start       ; 0.000        ; 0.000      ; 1.208      ;
+; 1.056 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[1] ; start                ; start       ; 0.000        ; 0.000      ; 1.208      ;
+; 1.056 ; contador0a9:HR0A9|contagem[0] ; contador0a9:HR0A9|contagem[0] ; start                ; start       ; 0.000        ; 0.000      ; 1.208      ;
++-------+-------------------------------+-------------------------------+----------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'set'                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.582 ; LogicaAlarme:LOGICADOALARME|signalreset ; LogicaAlarme:LOGICADOALARME|signalreset ; set          ; set         ; 0.000        ; 0.000      ; 0.734      ;
++-------+-----------------------------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'contador0a9:HR0A9|tc'                                                                                                                   ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; Slack ; From Node                     ; To Node                       ; Launch Clock         ; Latch Clock          ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+; 0.879 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 1.031      ;
+; 0.879 ; Contador0a2:HR0A2|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 1.031      ;
+; 1.068 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 1.220      ;
+; 1.068 ; Contador0a2:HR0A2|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 0.000        ; 0.000      ; 1.220      ;
+; 2.321 ; contador0a9:HR0A9|contagem[2] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -1.000     ; 0.973      ;
+; 2.321 ; contador0a9:HR0A9|contagem[2] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -1.000     ; 0.973      ;
+; 2.434 ; contador0a9:HR0A9|contagem[1] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -1.000     ; 1.086      ;
+; 2.434 ; contador0a9:HR0A9|contagem[1] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -1.000     ; 1.086      ;
+; 2.494 ; contador0a9:HR0A9|contagem[3] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -1.000     ; 1.146      ;
+; 2.494 ; contador0a9:HR0A9|contagem[3] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -1.000     ; 1.146      ;
+; 2.556 ; contador0a9:HR0A9|contagem[0] ; Contador0a2:HR0A2|contagem[1] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -1.000     ; 1.208      ;
+; 2.556 ; contador0a9:HR0A9|contagem[0] ; Contador0a2:HR0A2|contagem[0] ; start                ; contador0a9:HR0A9|tc ; -0.500       ; -1.000     ; 1.208      ;
++-------+-------------------------------+-------------------------------+----------------------+----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'config'                                                                                                                                     ;
++-------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.098 ; LogicaAlarme:LOGICADOALARME|signalreset ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ; set          ; config      ; -0.500       ; -0.016     ; 0.734      ;
++-------+-----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'start'                                                                         ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; start ; Rise       ; start                          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:HR0A9|contagem[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:HR0A9|contagem[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:HR0A9|contagem[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:HR0A9|contagem[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:HR0A9|contagem[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:HR0A9|contagem[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:HR0A9|contagem[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:HR0A9|contagem[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:HR0A9|tc           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:HR0A9|tc           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:MIN0A9|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:MIN0A9|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:MIN0A9|contagem[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:MIN0A9|contagem[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:MIN0A9|contagem[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:MIN0A9|contagem[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:MIN0A9|contagem[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:MIN0A9|contagem[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; start ; Fall       ; contador0a9:MIN0A9|tc          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; start ; Fall       ; contador0a9:MIN0A9|tc          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; HR0A9|contagem[0]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; HR0A9|contagem[0]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; HR0A9|contagem[1]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; HR0A9|contagem[1]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; HR0A9|contagem[2]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; HR0A9|contagem[2]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; HR0A9|contagem[3]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; HR0A9|contagem[3]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; HR0A9|tc|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; HR0A9|tc|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; MIN0A9|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; MIN0A9|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; MIN0A9|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; MIN0A9|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; MIN0A9|contagem[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; MIN0A9|contagem[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; MIN0A9|contagem[3]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; MIN0A9|contagem[3]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; MIN0A9|tc|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; MIN0A9|tc|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb|combout                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb|combout                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Rise       ; comb|datac                     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Rise       ; comb|datac                     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb~3|combout                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb~3|combout                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Rise       ; comb~3|datac                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Rise       ; comb~3|datac                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb~4clkctrl|inclk[0]         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb~4clkctrl|inclk[0]         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb~4clkctrl|outclk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb~4clkctrl|outclk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb~clkctrl|inclk[0]          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb~clkctrl|inclk[0]          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Fall       ; comb~clkctrl|outclk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Fall       ; comb~clkctrl|outclk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; start ; Rise       ; start|combout                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; start ; Rise       ; start|combout                  ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'set'                                                                                    ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                  ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; set   ; Rise       ; set                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; set   ; Fall       ; LogicaAlarme:LOGICADOALARME|signalcont  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; set   ; Fall       ; LogicaAlarme:LOGICADOALARME|signalcont  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; set   ; Fall       ; LogicaAlarme:LOGICADOALARME|signalreset ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; set   ; Fall       ; LogicaAlarme:LOGICADOALARME|signalreset ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; set   ; Rise       ; LOGICADOALARME|signalcont|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; set   ; Rise       ; LOGICADOALARME|signalcont|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; set   ; Rise       ; LOGICADOALARME|signalreset|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; set   ; Rise       ; LOGICADOALARME|signalreset|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; set   ; Rise       ; set|combout                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; set   ; Rise       ; set|combout                             ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'config'                                                                                   ;
++--------+--------------+----------------+------------------+--------+------------+------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target                                   ;
++--------+--------------+----------------+------------------+--------+------------+------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; config ; Rise       ; config                                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; config ; Rise       ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; config ; Rise       ; LogicaAlarme:LOGICADOALARME|JK:FFJK|temp ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; config ; Rise       ; LOGICADOALARME|FFJK|temp|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; config ; Rise       ; LOGICADOALARME|FFJK|temp|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; config ; Rise       ; config|combout                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; config ; Rise       ; config|combout                           ;
++--------+--------------+----------------+------------------+--------+------------+------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'contador0a9:MIN0A9|tc'                                                                         ;
++--------+--------------+----------------+------------------+-----------------------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+-----------------------+------------+--------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; contador0a5:MIN0A5|contagem[2] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A5|contagem[2]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc|regout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc|regout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc~clkctrl|inclk[0]     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc~clkctrl|inclk[0]     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc~clkctrl|outclk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:MIN0A9|tc ; Rise       ; MIN0A9|tc~clkctrl|outclk       ;
++--------+--------------+----------------+------------------+-----------------------+------------+--------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'contador0a9:HR0A9|tc'                                                                        ;
++--------+--------------+----------------+------------------+----------------------+------------+-------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                ; Clock Edge ; Target                        ;
++--------+--------------+----------------+------------------+----------------------+------------+-------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; Contador0a2:HR0A2|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; Contador0a2:HR0A2|contagem[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; Contador0a2:HR0A2|contagem[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; Contador0a2:HR0A2|contagem[1] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; HR0A2|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; HR0A2|contagem[0]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; HR0A2|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; HR0A2|contagem[1]|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc|regout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc|regout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc~clkctrl|inclk[0]     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc~clkctrl|inclk[0]     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc~clkctrl|outclk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; contador0a9:HR0A9|tc ; Rise       ; HR0A9|tc~clkctrl|outclk       ;
++--------+--------------+----------------+------------------+----------------------+------------+-------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; reset     ; start      ; -1.492 ; -1.492 ; Fall       ; start           ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; reset     ; start      ; 2.475 ; 2.475 ; Fall       ; start           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                     ;
++--------------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port    ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++--------------+-----------------------+-------+-------+------------+-----------------------+
+; Ativado      ; contador0a9:HR0A9|tc  ; 4.197 ; 4.197 ; Rise       ; contador0a9:HR0A9|tc  ;
+; Horas2[*]    ; contador0a9:HR0A9|tc  ; 3.629 ; 3.629 ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[0]   ; contador0a9:HR0A9|tc  ; 3.501 ; 3.501 ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[1]   ; contador0a9:HR0A9|tc  ; 3.629 ; 3.629 ; Rise       ; contador0a9:HR0A9|tc  ;
+; Ativado      ; contador0a9:MIN0A9|tc ; 4.541 ; 4.541 ; Rise       ; contador0a9:MIN0A9|tc ;
+; Minutos2[*]  ; contador0a9:MIN0A9|tc ; 3.388 ; 3.388 ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[0] ; contador0a9:MIN0A9|tc ; 3.347 ; 3.347 ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[1] ; contador0a9:MIN0A9|tc ; 3.369 ; 3.369 ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[2] ; contador0a9:MIN0A9|tc ; 3.388 ; 3.388 ; Rise       ; contador0a9:MIN0A9|tc ;
+; Ativado      ; start                 ; 6.180 ; 6.180 ; Fall       ; start                 ;
+; Horas1[*]    ; start                 ; 4.626 ; 4.626 ; Fall       ; start                 ;
+;  Horas1[0]   ; start                 ; 4.501 ; 4.501 ; Fall       ; start                 ;
+;  Horas1[1]   ; start                 ; 4.504 ; 4.504 ; Fall       ; start                 ;
+;  Horas1[2]   ; start                 ; 4.626 ; 4.626 ; Fall       ; start                 ;
+;  Horas1[3]   ; start                 ; 4.495 ; 4.495 ; Fall       ; start                 ;
+; Minutos1[*]  ; start                 ; 5.546 ; 5.546 ; Fall       ; start                 ;
+;  Minutos1[0] ; start                 ; 5.454 ; 5.454 ; Fall       ; start                 ;
+;  Minutos1[1] ; start                 ; 5.498 ; 5.498 ; Fall       ; start                 ;
+;  Minutos1[2] ; start                 ; 5.477 ; 5.477 ; Fall       ; start                 ;
+;  Minutos1[3] ; start                 ; 5.546 ; 5.546 ; Fall       ; start                 ;
++--------------+-----------------------+-------+-------+------------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                             ;
++--------------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port    ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++--------------+-----------------------+-------+-------+------------+-----------------------+
+; Ativado      ; contador0a9:HR0A9|tc  ; 3.980 ; 3.980 ; Rise       ; contador0a9:HR0A9|tc  ;
+; Horas2[*]    ; contador0a9:HR0A9|tc  ; 3.501 ; 3.501 ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[0]   ; contador0a9:HR0A9|tc  ; 3.501 ; 3.501 ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[1]   ; contador0a9:HR0A9|tc  ; 3.629 ; 3.629 ; Rise       ; contador0a9:HR0A9|tc  ;
+; Ativado      ; contador0a9:MIN0A9|tc ; 4.355 ; 4.355 ; Rise       ; contador0a9:MIN0A9|tc ;
+; Minutos2[*]  ; contador0a9:MIN0A9|tc ; 3.347 ; 3.347 ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[0] ; contador0a9:MIN0A9|tc ; 3.347 ; 3.347 ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[1] ; contador0a9:MIN0A9|tc ; 3.369 ; 3.369 ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[2] ; contador0a9:MIN0A9|tc ; 3.388 ; 3.388 ; Rise       ; contador0a9:MIN0A9|tc ;
+; Ativado      ; start                 ; 5.063 ; 5.063 ; Fall       ; start                 ;
+; Horas1[*]    ; start                 ; 4.495 ; 4.495 ; Fall       ; start                 ;
+;  Horas1[0]   ; start                 ; 4.501 ; 4.501 ; Fall       ; start                 ;
+;  Horas1[1]   ; start                 ; 4.504 ; 4.504 ; Fall       ; start                 ;
+;  Horas1[2]   ; start                 ; 4.626 ; 4.626 ; Fall       ; start                 ;
+;  Horas1[3]   ; start                 ; 4.495 ; 4.495 ; Fall       ; start                 ;
+; Minutos1[*]  ; start                 ; 5.454 ; 5.454 ; Fall       ; start                 ;
+;  Minutos1[0] ; start                 ; 5.454 ; 5.454 ; Fall       ; start                 ;
+;  Minutos1[1] ; start                 ; 5.498 ; 5.498 ; Fall       ; start                 ;
+;  Minutos1[2] ; start                 ; 5.477 ; 5.477 ; Fall       ; start                 ;
+;  Minutos1[3] ; start                 ; 5.546 ; 5.546 ; Fall       ; start                 ;
++--------------+-----------------------+-------+-------+------------+-----------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                  ;
++------------------------+--------+---------+----------+---------+---------------------+
+; Clock                  ; Setup  ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------------+--------+---------+----------+---------+---------------------+
+; Worst-case Slack       ; -0.997 ; -6.024  ; -3.866   ; 0.170   ; -1.380              ;
+;  config                ; 0.379  ; 0.215   ; -0.781   ; 1.098   ; -1.222              ;
+;  contador0a9:HR0A9|tc  ; 0.225  ; 0.215   ; -3.866   ; 0.879   ; -0.500              ;
+;  contador0a9:MIN0A9|tc ; -0.062 ; 0.215   ; N/A      ; N/A     ; -0.500              ;
+;  set                   ; -0.249 ; 0.215   ; -0.260   ; 0.582   ; -1.222              ;
+;  start                 ; -0.997 ; -6.024  ; -1.316   ; 0.170   ; -1.380              ;
+; Design-wide TNS        ; -3.282 ; -10.479 ; -14.037  ; 0.0     ; -21.824             ;
+;  config                ; 0.000  ; 0.000   ; -0.781   ; 0.000   ; -2.222              ;
+;  contador0a9:HR0A9|tc  ; 0.000  ; 0.000   ; -7.732   ; 0.000   ; -2.000              ;
+;  contador0a9:MIN0A9|tc ; -0.089 ; 0.000   ; N/A      ; N/A     ; -3.000              ;
+;  set                   ; -0.494 ; 0.000   ; -0.260   ; 0.000   ; -3.222              ;
+;  start                 ; -2.699 ; -10.479 ; -5.264   ; 0.000   ; -11.380             ;
++------------------------+--------+---------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; reset     ; start      ; -1.492 ; -1.492 ; Fall       ; start           ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; reset     ; start      ; 4.343 ; 4.343 ; Fall       ; start           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                       ;
++--------------+-----------------------+--------+--------+------------+-----------------------+
+; Data Port    ; Clock Port            ; Rise   ; Fall   ; Clock Edge ; Clock Reference       ;
++--------------+-----------------------+--------+--------+------------+-----------------------+
+; Ativado      ; contador0a9:HR0A9|tc  ; 7.833  ; 7.833  ; Rise       ; contador0a9:HR0A9|tc  ;
+; Horas2[*]    ; contador0a9:HR0A9|tc  ; 6.489  ; 6.489  ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[0]   ; contador0a9:HR0A9|tc  ; 6.228  ; 6.228  ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[1]   ; contador0a9:HR0A9|tc  ; 6.489  ; 6.489  ; Rise       ; contador0a9:HR0A9|tc  ;
+; Ativado      ; contador0a9:MIN0A9|tc ; 8.661  ; 8.661  ; Rise       ; contador0a9:MIN0A9|tc ;
+; Minutos2[*]  ; contador0a9:MIN0A9|tc ; 5.988  ; 5.988  ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[0] ; contador0a9:MIN0A9|tc ; 5.948  ; 5.948  ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[1] ; contador0a9:MIN0A9|tc ; 5.968  ; 5.968  ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[2] ; contador0a9:MIN0A9|tc ; 5.988  ; 5.988  ; Rise       ; contador0a9:MIN0A9|tc ;
+; Ativado      ; start                 ; 11.773 ; 11.773 ; Fall       ; start                 ;
+; Horas1[*]    ; start                 ; 8.551  ; 8.551  ; Fall       ; start                 ;
+;  Horas1[0]   ; start                 ; 8.285  ; 8.285  ; Fall       ; start                 ;
+;  Horas1[1]   ; start                 ; 8.284  ; 8.284  ; Fall       ; start                 ;
+;  Horas1[2]   ; start                 ; 8.551  ; 8.551  ; Fall       ; start                 ;
+;  Horas1[3]   ; start                 ; 8.275  ; 8.275  ; Fall       ; start                 ;
+; Minutos1[*]  ; start                 ; 10.205 ; 10.205 ; Fall       ; start                 ;
+;  Minutos1[0] ; start                 ; 10.070 ; 10.070 ; Fall       ; start                 ;
+;  Minutos1[1] ; start                 ; 10.111 ; 10.111 ; Fall       ; start                 ;
+;  Minutos1[2] ; start                 ; 10.093 ; 10.093 ; Fall       ; start                 ;
+;  Minutos1[3] ; start                 ; 10.205 ; 10.205 ; Fall       ; start                 ;
++--------------+-----------------------+--------+--------+------------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                             ;
++--------------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port    ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++--------------+-----------------------+-------+-------+------------+-----------------------+
+; Ativado      ; contador0a9:HR0A9|tc  ; 3.980 ; 3.980 ; Rise       ; contador0a9:HR0A9|tc  ;
+; Horas2[*]    ; contador0a9:HR0A9|tc  ; 3.501 ; 3.501 ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[0]   ; contador0a9:HR0A9|tc  ; 3.501 ; 3.501 ; Rise       ; contador0a9:HR0A9|tc  ;
+;  Horas2[1]   ; contador0a9:HR0A9|tc  ; 3.629 ; 3.629 ; Rise       ; contador0a9:HR0A9|tc  ;
+; Ativado      ; contador0a9:MIN0A9|tc ; 4.355 ; 4.355 ; Rise       ; contador0a9:MIN0A9|tc ;
+; Minutos2[*]  ; contador0a9:MIN0A9|tc ; 3.347 ; 3.347 ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[0] ; contador0a9:MIN0A9|tc ; 3.347 ; 3.347 ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[1] ; contador0a9:MIN0A9|tc ; 3.369 ; 3.369 ; Rise       ; contador0a9:MIN0A9|tc ;
+;  Minutos2[2] ; contador0a9:MIN0A9|tc ; 3.388 ; 3.388 ; Rise       ; contador0a9:MIN0A9|tc ;
+; Ativado      ; start                 ; 5.063 ; 5.063 ; Fall       ; start                 ;
+; Horas1[*]    ; start                 ; 4.495 ; 4.495 ; Fall       ; start                 ;
+;  Horas1[0]   ; start                 ; 4.501 ; 4.501 ; Fall       ; start                 ;
+;  Horas1[1]   ; start                 ; 4.504 ; 4.504 ; Fall       ; start                 ;
+;  Horas1[2]   ; start                 ; 4.626 ; 4.626 ; Fall       ; start                 ;
+;  Horas1[3]   ; start                 ; 4.495 ; 4.495 ; Fall       ; start                 ;
+; Minutos1[*]  ; start                 ; 5.454 ; 5.454 ; Fall       ; start                 ;
+;  Minutos1[0] ; start                 ; 5.454 ; 5.454 ; Fall       ; start                 ;
+;  Minutos1[1] ; start                 ; 5.498 ; 5.498 ; Fall       ; start                 ;
+;  Minutos1[2] ; start                 ; 5.477 ; 5.477 ; Fall       ; start                 ;
+;  Minutos1[3] ; start                 ; 5.546 ; 5.546 ; Fall       ; start                 ;
++--------------+-----------------------+-------+-------+------------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                           ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; config                ; config                ; 1        ; 0        ; 0        ; 0        ;
+; contador0a9:HR0A9|tc  ; contador0a9:HR0A9|tc  ; 4        ; 0        ; 0        ; 0        ;
+; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 7        ; 0        ; 0        ; 0        ;
+; config                ; set                   ; 0        ; 0        ; 2        ; 0        ;
+; set                   ; set                   ; 0        ; 0        ; 0        ; 3        ;
+; contador0a9:HR0A9|tc  ; start                 ; 0        ; 0        ; 3        ; 1        ;
+; contador0a9:MIN0A9|tc ; start                 ; 0        ; 0        ; 1        ; 1        ;
+; start                 ; start                 ; 0        ; 0        ; 0        ; 36       ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                            ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; config                ; config                ; 1        ; 0        ; 0        ; 0        ;
+; contador0a9:HR0A9|tc  ; contador0a9:HR0A9|tc  ; 4        ; 0        ; 0        ; 0        ;
+; contador0a9:MIN0A9|tc ; contador0a9:MIN0A9|tc ; 7        ; 0        ; 0        ; 0        ;
+; config                ; set                   ; 0        ; 0        ; 2        ; 0        ;
+; set                   ; set                   ; 0        ; 0        ; 0        ; 3        ;
+; contador0a9:HR0A9|tc  ; start                 ; 0        ; 0        ; 3        ; 1        ;
+; contador0a9:MIN0A9|tc ; start                 ; 0        ; 0        ; 1        ; 1        ;
+; start                 ; start                 ; 0        ; 0        ; 0        ; 36       ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                      ;
++----------------------+----------------------+----------+----------+----------+----------+
+; From Clock           ; To Clock             ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++----------------------+----------------------+----------+----------+----------+----------+
+; set                  ; config               ; 0        ; 1        ; 0        ; 0        ;
+; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 4        ; 0        ; 0        ; 0        ;
+; start                ; contador0a9:HR0A9|tc ; 0        ; 8        ; 0        ; 0        ;
+; set                  ; set                  ; 0        ; 0        ; 0        ; 1        ;
+; contador0a9:HR0A9|tc ; start                ; 0        ; 0        ; 8        ; 0        ;
+; start                ; start                ; 0        ; 0        ; 0        ; 16       ;
++----------------------+----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------+
+; Removal Transfers                                                                       ;
++----------------------+----------------------+----------+----------+----------+----------+
+; From Clock           ; To Clock             ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++----------------------+----------------------+----------+----------+----------+----------+
+; set                  ; config               ; 0        ; 1        ; 0        ; 0        ;
+; contador0a9:HR0A9|tc ; contador0a9:HR0A9|tc ; 4        ; 0        ; 0        ; 0        ;
+; start                ; contador0a9:HR0A9|tc ; 0        ; 8        ; 0        ; 0        ;
+; set                  ; set                  ; 0        ; 0        ; 0        ; 1        ;
+; contador0a9:HR0A9|tc ; start                ; 0        ; 0        ; 8        ; 0        ;
+; start                ; start                ; 0        ; 0        ; 0        ; 16       ;
++----------------------+----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 15    ; 15   ;
+; Unconstrained Output Ports      ; 14    ; 14   ;
+; Unconstrained Output Port Paths ; 26    ; 26   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Fri Jun 08 14:22:59 2018
+Info: Command: quartus_sta Alarme -c Alarme
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Alarme.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name start start
+    Info (332105): create_clock -period 1.000 -name set set
+    Info (332105): create_clock -period 1.000 -name config config
+    Info (332105): create_clock -period 1.000 -name contador0a9:MIN0A9|tc contador0a9:MIN0A9|tc
+    Info (332105): create_clock -period 1.000 -name contador0a9:HR0A9|tc contador0a9:HR0A9|tc
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.997
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.997        -2.699 start 
+    Info (332119):    -0.249        -0.494 set 
+    Info (332119):    -0.062        -0.089 contador0a9:MIN0A9|tc 
+    Info (332119):     0.225         0.000 contador0a9:HR0A9|tc 
+    Info (332119):     0.379         0.000 config 
+Info (332146): Worst-case hold slack is -6.024
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -6.024       -10.479 start 
+    Info (332119):     0.391         0.000 config 
+    Info (332119):     0.391         0.000 contador0a9:HR0A9|tc 
+    Info (332119):     0.391         0.000 contador0a9:MIN0A9|tc 
+    Info (332119):     0.391         0.000 set 
+Info (332146): Worst-case recovery slack is -3.866
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.866        -7.732 contador0a9:HR0A9|tc 
+    Info (332119):    -1.316        -5.264 start 
+    Info (332119):    -0.781        -0.781 config 
+    Info (332119):    -0.260        -0.260 set 
+Info (332146): Worst-case removal slack is 0.170
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.170         0.000 start 
+    Info (332119):     1.030         0.000 set 
+    Info (332119):     1.551         0.000 config 
+    Info (332119):     1.720         0.000 contador0a9:HR0A9|tc 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -11.380 start 
+    Info (332119):    -1.222        -3.222 set 
+    Info (332119):    -1.222        -2.222 config 
+    Info (332119):    -0.500        -3.000 contador0a9:MIN0A9|tc 
+    Info (332119):    -0.500        -2.000 contador0a9:HR0A9|tc 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 0.108
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.108         0.000 start 
+    Info (332119):     0.144         0.000 set 
+    Info (332119):     0.512         0.000 contador0a9:MIN0A9|tc 
+    Info (332119):     0.627         0.000 contador0a9:HR0A9|tc 
+    Info (332119):     0.665         0.000 config 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -3.300
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.300        -5.739 start 
+    Info (332119):     0.215         0.000 config 
+    Info (332119):     0.215         0.000 contador0a9:HR0A9|tc 
+    Info (332119):     0.215         0.000 contador0a9:MIN0A9|tc 
+    Info (332119):     0.215         0.000 set 
+Info (332146): Worst-case recovery slack is -1.676
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.676        -3.352 contador0a9:HR0A9|tc 
+    Info (332119):    -0.218        -0.218 config 
+    Info (332119):    -0.176        -0.704 start 
+    Info (332119):     0.298         0.000 set 
+Info (332146): Worst-case removal slack is 0.379
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.379         0.000 start 
+    Info (332119):     0.582         0.000 set 
+    Info (332119):     0.879         0.000 contador0a9:HR0A9|tc 
+    Info (332119):     1.098         0.000 config 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -11.380 start 
+    Info (332119):    -1.222        -3.222 set 
+    Info (332119):    -1.222        -2.222 config 
+    Info (332119):    -0.500        -3.000 contador0a9:MIN0A9|tc 
+    Info (332119):    -0.500        -2.000 contador0a9:HR0A9|tc 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4568 megabytes
+    Info: Processing ended: Fri Jun 08 14:23:00 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
