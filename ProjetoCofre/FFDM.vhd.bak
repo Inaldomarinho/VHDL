@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ffdm is
+port(D, C, reset: in std_logic;
+     clock: in std_logic;
+	  Q=1, Qbar: out std_logic);
+	  end ffd;
+	  
+architecture ffd of ffdm is
+signal QSignal: std_logic;
+begin
+
+     process(clock)	  
+	  if (reset'event and reset = '0' and C = '0') then
+			Qsignal <= 1;
+			
+	  elsif (clock'event and clock = '0' and C = '0') then 
+	       QSignal<= d;
+	  end if;
+	 end process;
+	  Q<= QSignal;
+	  QBar<= not Qsignal;
+ end ffd;	

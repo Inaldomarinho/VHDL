@@ -1,0 +1,135 @@
+|cofre
+entrada[0] => QXNOR[0].IN1
+entrada[0] => FFD:FFD0.D
+entrada[1] => QXNOR[1].IN1
+entrada[1] => FFD:FFD1.D
+entrada[2] => QXNOR[2].IN1
+entrada[2] => FFD:FFD2.D
+entrada[3] => QXNOR[3].IN1
+entrada[3] => FFD:FFD3.D
+entrada[4] => QXNOR[4].IN1
+entrada[4] => FFD:FFD4.D
+entrada[5] => QXNOR[5].IN1
+entrada[5] => FFD:FFD5.D
+entrada[6] => QXNOR[6].IN1
+entrada[6] => FFD:FFD6.D
+entrada[7] => QXNOR[7].IN1
+entrada[7] => FFD:FFD7.D
+reset => comb~0.IN1
+reset => FFDM:FFDM0.reset
+cs => FFD:FFD0.C
+cs => FFD:FFD1.C
+cs => FFD:FFD2.C
+cs => FFD:FFD3.C
+cs => FFD:FFD4.C
+cs => FFD:FFD5.C
+cs => FFD:FFD6.C
+cs => FFD:FFD7.C
+cs => modo.DATAIN
+cs => FFD:FFD8.C
+cs => FFDM:FFDM0.C
+clk => FFD:FFD0.clock
+clk => FFD:FFD1.clock
+clk => FFD:FFD2.clock
+clk => FFD:FFD3.clock
+clk => FFD:FFD4.clock
+clk => FFD:FFD5.clock
+clk => FFD:FFD6.clock
+clk => FFD:FFD7.clock
+clk => FFD:FFD8.clock
+clk => FFDM:FFDM0.clock
+bloq <= FFDM:FFDM0.Q
+abre <= FFD:FFD8.Q
+modo <= cs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cofre|ffd:FFD0
+D => QSignal.DATAIN
+C => QSignal.ENA
+clock => QSignal.CLK
+reset => QSignal.ACLR
+Q <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cofre|ffd:FFD1
+D => QSignal.DATAIN
+C => QSignal.ENA
+clock => QSignal.CLK
+reset => QSignal.ACLR
+Q <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cofre|ffd:FFD2
+D => QSignal.DATAIN
+C => QSignal.ENA
+clock => QSignal.CLK
+reset => QSignal.ACLR
+Q <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cofre|ffd:FFD3
+D => QSignal.DATAIN
+C => QSignal.ENA
+clock => QSignal.CLK
+reset => QSignal.ACLR
+Q <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cofre|ffd:FFD4
+D => QSignal.DATAIN
+C => QSignal.ENA
+clock => QSignal.CLK
+reset => QSignal.ACLR
+Q <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cofre|ffd:FFD5
+D => QSignal.DATAIN
+C => QSignal.ENA
+clock => QSignal.CLK
+reset => QSignal.ACLR
+Q <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cofre|ffd:FFD6
+D => QSignal.DATAIN
+C => QSignal.ENA
+clock => QSignal.CLK
+reset => QSignal.ACLR
+Q <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cofre|ffd:FFD7
+D => QSignal.DATAIN
+C => QSignal.ENA
+clock => QSignal.CLK
+reset => QSignal.ACLR
+Q <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cofre|ffd:FFD8
+D => QSignal.DATAIN
+C => QSignal.ENA
+clock => QSignal.CLK
+reset => QSignal.ACLR
+Q <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cofre|ffdm:FFDM0
+D => QSignal.DATAIN
+C => QSignal.ENA
+clock => QSignal.CLK
+reset => QSignal.PRESET
+Q <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= QSignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
