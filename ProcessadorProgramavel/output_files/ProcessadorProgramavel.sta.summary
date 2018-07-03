@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'ctrl:controller|atv[0]'
+Slack : -3.778
+TNS   : -11.448
+
+Type  : Slow Model Setup 'DivisorFreq:Divfreq|estado'
+Slack : -2.751
+TNS   : -105.205
+
+Type  : Slow Model Setup 'clock'
+Slack : -2.626
+TNS   : -42.132
+
+Type  : Slow Model Hold 'clock'
+Slack : -2.532
+TNS   : -2.532
+
+Type  : Slow Model Hold 'DivisorFreq:Divfreq|estado'
+Slack : -1.274
+TNS   : -11.598
+
+Type  : Slow Model Hold 'ctrl:controller|atv[0]'
+Slack : 0.176
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -26.380
+
+Type  : Slow Model Minimum Pulse Width 'DivisorFreq:Divfreq|estado'
+Slack : -0.500
+TNS   : -92.000
+
+Type  : Slow Model Minimum Pulse Width 'ctrl:controller|atv[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'ctrl:controller|atv[0]'
+Slack : -1.413
+TNS   : -3.919
+
+Type  : Fast Model Setup 'DivisorFreq:Divfreq|estado'
+Slack : -0.923
+TNS   : -12.829
+
+Type  : Fast Model Setup 'clock'
+Slack : -0.725
+TNS   : -7.901
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.576
+TNS   : -1.576
+
+Type  : Fast Model Hold 'DivisorFreq:Divfreq|estado'
+Slack : -1.000
+TNS   : -14.684
+
+Type  : Fast Model Hold 'ctrl:controller|atv[0]'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -26.380
+
+Type  : Fast Model Minimum Pulse Width 'DivisorFreq:Divfreq|estado'
+Slack : -0.500
+TNS   : -92.000
+
+Type  : Fast Model Minimum Pulse Width 'ctrl:controller|atv[0]'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,12 @@
+# do ProcessadorProgramavel.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu_vlg_sample_tst
+# -- Compiling module cpu_vlg_check_tst
+# ** Error: ProcessadorProgramavel.vt(68): near "output": syntax error, unexpected output, expecting ')'
+# ** Error: c:/altera/13.0/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./ProcessadorProgramavel.do line 4
