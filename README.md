@@ -17,3 +17,8 @@ O projeto do cofre consiste em um projeto desenvolvido na linguagem de VHDl que 
 cosiste em um relogio que mostra a hora e tambem possui alarme e cronometro.
 
 
+
+## Projeto Processador Programavel
+O projeto consiste em um processador programavel subdivido em dois componentes: Controlador e Unidade de Procesamento. O processador possui 10 funćões disponiveis, entre elas: somar, subtração, not, and, halt, load, mover o dado para o banco de registradores e etc.
+
+
